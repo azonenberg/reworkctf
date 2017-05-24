@@ -16,7 +16,11 @@ azonenberg@drawersteak.com}
 
 \maketitle
 \begin{abstract}
-TODO
+The ``Rework CTF" is a game/training aid, similar to an infosec challenge-based CTF, but focusing on PCB rework and
+soldering skills. The intended focus is on technician skills (fixing defects) not engineering skills (finding defects).
+The game is intended to be played on fully populated boards; the provided FPGA bitstream will automatically grade most
+problems and light up an LED upon successful completion. Additional blank boards may be used for practice and
+instruction before a for-point challenge is attempted on a populated PCB.
 \end{abstract}
 \thispagestyle{empty}
 
@@ -25,14 +29,141 @@ TODO
 \tableofcontents
 
 \pagebreak
-\section{Revision History}
-\begin{itemize}
-\item \today: [in progress] Initial draft
-\end{itemize}
-
-\pagebreak
 \section{Introduction}
 
+The bugs are sorted by difficulty, ranging from 100 to 500 points. Any and all tools are in scope, however cheating by
+simply shorting the LEVELx\_OK signal to power is not allowed. Specific rules, if applicable, are described in the
+subsections for each bug.
+
+Signals related to each bug are prefixed with ``LEVELx\_" in the KiCAD design files to make the bugs easier to find.
+
+There are two kinds of bugs in this board. Electrical connectivity bugs have numeric level identifiers (1, 2, 3, etc).
+The corresponding LED will light up when these problems are successfully completed. Mechanical/visual bugs have
+alphabetical level identifiers (A, B, C, etc). These are graded by looking at the board and deciding if it looks OK.
+
+All design files, including the Verilog source for the grader bitstream, are available under a 3-clause BSD-style
+license.
+
+\pagebreak
+\section{100-Point Bugs}
+
+\subsection{Level 1}
+
+Input to a SOIC-packaged 7404 is shorted to the adjacent Vdd. Clear the short.
+
+\subsection{Level 2}
+
+LED-drive enable is always high, but the LED itself was installed backwards, Use hot air to flip it around.
+
+\subsection{Level 3}
+
+Input pad on a SOIC-packaged 7404 footprint is missing. Restore the open connection and install the IC. (50 bonus
+points for style if you put in a new SMT pad rather than just running a jumper.)
+
+\subsection{Level 4}
+
+0805 resistor is missing soldermask apertures. Remove the mask and solder a low-valued (anything under 1K should be fine)
+resistor onto the pads.
+
+\subsection{Level A}
+
+The resistor you installed in level 4 doesn't have a refdes. Label it ``R30" with white ink.
+
+\subsection{Level B}
+
+A region of the board is missing some solder mask. Mix up some 2-part epoxy, tint it to match the existing mask, and
+brush it on.
+
+\pagebreak
+\section{200-Point Bugs}
+
+\subsection{Level 5}
+
+Tiny short circuit between two closely spaced signals. Clear the short without damaging either line.
+
+\subsection{Level 6}
+
+Large short circuit between two closely spaced signals. Clear the short without damaging either line.
+
+\subsection{Level 7}
+
+LVDS pair on outer layer with P/N swapped. Hook them up correctly.
+
+\subsection{Level 8}
+
+Several input pads on a TSSOP-packaged 7404 footprint are missing. Restore the open connection and install the IC. (50
+bonus points for style if you put in a new SMT pad rather than just running a jumper.)
+
+\subsection{Level 9}
+
+Install an 01005 resistor (anything under 1K should be fine) onto the provided pads.
+
+\subsection{Level 10}
+
+Via connecting to input of TSSOP-packaged 7404 doesn't actually connect to the input. Fix it.
+
+\subsection{Level 11}
+
+Missing thermal relief connecting to one side of an 0201 passive causing tombstoning. Cut out a thermal relief and fix
+the tombstoned part.
+
+\pagebreak
+\section{300-Point Bugs}
+
+\subsection{Level 12}
+
+A through-board via wasn't drilled. Fix it.
+
+\subsection{Level 13}
+
+Two signals on an internal layer are shorted. Clear the short.
+
+\subsection{Level 14}
+
+A dogbone via on the FPGA footprint wasn't connected to the corresponding ball. Fix it before installing the FPGA.
+
+\pagebreak
+\section{400-Point Bugs}
+
+\subsection{Level 15}
+
+A differential pair on an internal layer is swapped. Fix it. For this level, you're not allowed to just drill out the
+trace and connect the vias directly, we're pretending the vias are blind/buried. You must fix this with an inner-layer
+circuit edit.
+
+\subsection{Level 16}
+
+Two signals on an internal layer are shorted together. Clear the short. Heavy routing congestion on the top layer
+make this harder than level 13.
+
+\subsection{Level 17}
+
+Due to a drill-gerber file version mismatch, a signal via was shorted to the internal ground plane. Clear the short.
+
+\subsection{Level 18}
+
+A dogbone via on the FPGA footprint wasn't drilled out. Fix it before installing the FPGA.
+
+\pagebreak
+\section{500-Point Bugs}
+
+\subsection{Level 19}
+
+Two blind vias at the same place on opposite sides of the board were incorrectly drilled as a through-board via.
+Separate the two vias so that the outer layers connect to the adjacent plane, but they don't short to each other.
+
+\subsection{Level 20}
+
+A strap pin under a BGA was incorrectly tied high. Pull it low instead.
+
+\subsection{Level 21}
+
+Two signals on an internal layer are shorted together. Clear the short. Heavy routing congestion on both outer layers
+make this harder than level 16.
+
+\subsection{Level 22}
+
+A dogbone via on the FPGA footprint wasn't drilled out. Fix it after installing the FPGA.
 
 
 \end{document}
