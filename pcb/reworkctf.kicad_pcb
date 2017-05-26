@@ -63,7 +63,7 @@
     (mod_edge_width 0.15)
     (mod_text_size 0.9 0.9)
     (mod_text_width 0.125)
-    (pad_size 2 3)
+    (pad_size 0.15 3)
     (pad_drill 0)
     (pad_to_mask_clearance 0.05)
     (aux_axis_origin 25 16)
@@ -605,7 +605,7 @@
     (add_net "Net-(U6-Pad12)")
   )
 
-  (module azonenberg_pcb:TESTPOINT_BARETRACE_150UM (layer B.Cu) (tedit 5927C155) (tstamp 5928B28E)
+  (module azonenberg_pcb:TESTPOINT_BARETRACE_150UM (layer B.Cu) (tedit 5927C9A4) (tstamp 5928B28E)
     (at 78.65 43.27 90)
     (solder_mask_margin 0.05)
     (fp_text reference LEVEL6_SHORT (at 0 -3.25 90) (layer B.SilkS) hide
@@ -614,10 +614,10 @@
     (fp_text value TESTPOINT_BARETRACE_150UM (at 0 -1.75 90) (layer B.Fab) hide
       (effects (font (size 0.9 0.9) (thickness 0.125)) (justify mirror))
     )
-    (pad 1 smd rect (at 0 0 90) (size 0.15 3) (layers B.Cu B.Mask))
+    (pad 1 smd rect (at 0 0 90) (size 0.15 3) (layers B.Cu))
   )
 
-  (module azonenberg_pcb:TESTPOINT_BARETRACE_150UM (layer F.Cu) (tedit 5927C137) (tstamp 5928962B)
+  (module azonenberg_pcb:TESTPOINT_BARETRACE_150UM (layer F.Cu) (tedit 5927C952) (tstamp 5928962B)
     (at 74.55 45.25 90)
     (solder_mask_margin 0.05)
     (fp_text reference LEVEL5_SHORT (at 0.03 0.95 90) (layer F.SilkS) hide
@@ -626,10 +626,10 @@
     (fp_text value TESTPOINT_BARETRACE_150UM (at 0 1.75 90) (layer F.Fab) hide
       (effects (font (size 0.9 0.9) (thickness 0.125)))
     )
-    (pad 1 smd rect (at 0 0 90) (size 0.25 0.25) (layers F.Cu F.Mask))
+    (pad 1 smd rect (at 0 0 90) (size 0.25 0.25) (layers F.Cu))
   )
 
-  (module azonenberg_pcb:TESTPOINT_BARETRACE_150UM (layer F.Cu) (tedit 5927C13D) (tstamp 592895F7)
+  (module azonenberg_pcb:TESTPOINT_BARETRACE_150UM (layer F.Cu) (tedit 5927C94D) (tstamp 592895F7)
     (at 77.5 46.45)
     (solder_mask_margin 0.05)
     (fp_text reference LEVEL2_SHORT (at 0.09 2.23) (layer F.SilkS) hide
@@ -638,7 +638,7 @@
     (fp_text value TESTPOINT_BARETRACE_150UM (at 0 1.75) (layer F.Fab) hide
       (effects (font (size 0.9 0.9) (thickness 0.125)))
     )
-    (pad 1 smd rect (at 0 0) (size 0.15 1) (layers F.Cu F.Mask))
+    (pad 1 smd rect (at 0 0) (size 0.15 1) (layers F.Cu))
   )
 
   (module azonenberg_pcb:EIA_0402_RES_NOSILK (layer B.Cu) (tedit 53C529D9) (tstamp 5927546C)
@@ -6194,7 +6194,7 @@
     )
   )
 
-  (module azonenberg_pcb:TESTPOINT_SMT_0.5MM (layer B.Cu) (tedit 59279778) (tstamp 59267BDE)
+  (module azonenberg_pcb:TESTPOINT_SMT_0.5MM (layer B.Cu) (tedit 5927C8AC) (tstamp 59267BDE)
     (at 66.5 44.5)
     (path /592A8309)
     (fp_text reference W1 (at 0 -1.5) (layer B.SilkS) hide
@@ -6203,11 +6203,11 @@
     (fp_text value VIAPAD (at 0.1 -2.9) (layer B.SilkS) hide
       (effects (font (size 0.9 0.9) (thickness 0.125)) (justify mirror))
     )
-    (pad 1 smd circle (at 0 0) (size 0.5 0.5) (layers B.Cu B.Mask)
+    (pad 1 smd circle (at 0 0) (size 0.5 0.5) (layers B.Cu)
       (net 27 /LEVEL18_SENSE))
   )
 
-  (module azonenberg_pcb:TESTPOINT_SMT_0.5MM (layer B.Cu) (tedit 592797C2) (tstamp 59267BD1)
+  (module azonenberg_pcb:TESTPOINT_SMT_0.5MM (layer B.Cu) (tedit 5927C88B) (tstamp 59267BD1)
     (at 66.5 41.5)
     (path /592A92D0)
     (fp_text reference W2 (at 0 -1.5) (layer B.SilkS) hide
@@ -6216,11 +6216,11 @@
     (fp_text value VIAPAD (at 0.1 -2.9) (layer B.SilkS) hide
       (effects (font (size 0.9 0.9) (thickness 0.125)) (justify mirror))
     )
-    (pad 1 smd circle (at 0 0) (size 0.5 0.5) (layers B.Cu B.Mask)
+    (pad 1 smd circle (at 0 0) (size 0.5 0.5) (layers B.Cu)
       (net 26 /LEVEL22_SENSE))
   )
 
-  (module azonenberg_pcb:TESTPOINT_SMT_0.5MM (layer F.Cu) (tedit 5927972E) (tstamp 59267BC4)
+  (module azonenberg_pcb:TESTPOINT_SMT_0.5MM (layer F.Cu) (tedit 5927C8A0) (tstamp 59267BC4)
     (at 66.5 44.5)
     (path /592A7E27)
     (fp_text reference W3 (at 0 1.5) (layer F.SilkS) hide
@@ -6229,11 +6229,11 @@
     (fp_text value VIAPAD (at 0.1 2.9) (layer F.SilkS) hide
       (effects (font (size 0.9 0.9) (thickness 0.125)))
     )
-    (pad 1 smd circle (at 0 0) (size 0.5 0.5) (layers F.Cu F.Mask)
+    (pad 1 smd circle (at 0 0) (size 0.5 0.5) (layers F.Cu)
       (net 25 /LEVEL18_TEST))
   )
 
-  (module azonenberg_pcb:TESTPOINT_SMT_0.5MM (layer F.Cu) (tedit 592797BF) (tstamp 59267BB7)
+  (module azonenberg_pcb:TESTPOINT_SMT_0.5MM (layer F.Cu) (tedit 5927C896) (tstamp 59267BB7)
     (at 66.5 41.5)
     (path /592A92CA)
     (fp_text reference W4 (at 0 1.5) (layer F.SilkS) hide
@@ -6242,11 +6242,11 @@
     (fp_text value VIAPAD (at 0.1 2.9) (layer F.SilkS) hide
       (effects (font (size 0.9 0.9) (thickness 0.125)))
     )
-    (pad 1 smd circle (at 0 0) (size 0.5 0.5) (layers F.Cu F.Mask)
+    (pad 1 smd circle (at 0 0) (size 0.5 0.5) (layers F.Cu)
       (net 24 /LEVEL22_TEST))
   )
 
-  (module azonenberg_pcb:TESTPOINT_SMT_0.5MM (layer B.Cu) (tedit 592793B3) (tstamp 59267BAA)
+  (module azonenberg_pcb:TESTPOINT_SMT_0.5MM (layer B.Cu) (tedit 5927C87E) (tstamp 59267BAA)
     (at 84.7 47.1)
     (path /59291539)
     (fp_text reference W5 (at 0 -1.5) (layer B.SilkS) hide
@@ -6255,11 +6255,11 @@
     (fp_text value VIAPAD (at 0.1 -2.9) (layer B.SilkS) hide
       (effects (font (size 0.9 0.9) (thickness 0.125)) (justify mirror))
     )
-    (pad 1 smd circle (at 0 0) (size 0.5 0.5) (layers B.Cu B.Mask)
+    (pad 1 smd circle (at 0 0) (size 0.5 0.5) (layers B.Cu)
       (net 23 /LEVEL12_TEST))
   )
 
-  (module azonenberg_pcb:TESTPOINT_SMT_0.5MM (layer F.Cu) (tedit 592793A5) (tstamp 59267B9D)
+  (module azonenberg_pcb:TESTPOINT_SMT_0.5MM (layer F.Cu) (tedit 5927C86E) (tstamp 59267B9D)
     (at 84.7 47.1)
     (path /59290A3E)
     (fp_text reference W6 (at 0 1.5) (layer F.SilkS) hide
@@ -6268,7 +6268,7 @@
     (fp_text value VIAPAD (at 0.1 2.9) (layer F.SilkS) hide
       (effects (font (size 0.9 0.9) (thickness 0.125)))
     )
-    (pad 1 smd circle (at 0 0) (size 0.5 0.5) (layers F.Cu F.Mask)
+    (pad 1 smd circle (at 0 0) (size 0.5 0.5) (layers F.Cu)
       (net 22 /LEVEL12_TEST_FLOAT))
   )
 
