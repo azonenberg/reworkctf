@@ -1,0 +1,182 @@
+NET "level1_test" LOC = N16;
+NET "level1_test" IOSTANDARD = LVCMOS33;
+NET "level1_sense" LOC = K15;
+NET "level1_sense" IOSTANDARD = LVCMOS33;
+NET "level1_sense" PULLDOWN;
+
+NET "level3_sense" LOC = D15;
+NET "level3_sense" IOSTANDARD = LVCMOS33;
+NET "level3_sense" PULLDOWN;
+NET "level3_test" LOC = D16;
+NET "level3_test" IOSTANDARD = LVCMOS33;
+
+NET "level4_sense" LOC = C15;
+NET "level4_sense" IOSTANDARD = LVCMOS33;
+NET "level4_sense" PULLDOWN;
+NET "level4_test" LOC = C16;
+NET "level4_test" IOSTANDARD = LVCMOS33;
+
+NET "level5_test" LOC = K16;
+NET "level5_test" IOSTANDARD = LVCMOS33;
+NET "level5_sense" LOC = H14;
+NET "level5_sense" IOSTANDARD = LVCMOS33;
+NET "level5_sense" PULLDOWN;
+
+NET "level6_test" LOC = K14;
+NET "level6_test" IOSTANDARD = LVCMOS33;
+NET "level6_sense" LOC = D14;
+NET "level6_sense" IOSTANDARD = LVCMOS33;
+NET "level6_sense" PULLDOWN;
+
+NET "level7_sense_p" LOC = B12;
+NET "level7_sense_p" IOSTANDARD = LVCMOS25;
+NET "level7_test_p" LOC = C12;
+NET "level7_test_p" IOSTANDARD = LVCMOS25;
+NET "level7_test_n" LOC = D11;
+NET "level7_test_n" IOSTANDARD = LVCMOS25;
+
+NET "level8_sense" LOC = H7;
+NET "level8_sense" IOSTANDARD = LVCMOS33;
+NET "level8_test" LOC = G2;
+NET "level8_test" IOSTANDARD = LVCMOS33;
+NET "level8_sense" PULLDOWN;
+
+NET "level9_sense" LOC = A5;
+NET "level9_sense" IOSTANDARD = LVCMOS25;
+NET "level9_test" LOC = A4;
+NET "level9_test" IOSTANDARD = LVCMOS25;
+NET "level9_sense" PULLDOWN;
+
+NET "level10_sense" LOC = F4;
+NET "level10_sense" IOSTANDARD = LVCMOS33;
+NET "level10_sense" PULLDOWN;
+
+NET "level11_sense" LOC = E4;
+NET "level11_sense" IOSTANDARD = LVCMOS33;
+NET "level11_sense" PULLDOWN;
+
+NET "level12_sense" LOC = R15;
+NET "level12_sense" IOSTANDARD = LVCMOS33;
+NET "level12_test" LOC = P16;
+NET "level12_test" IOSTANDARD = LVCMOS33;
+NET "level12_sense" PULLDOWN;
+
+NET "level13_test_a" LOC = C8;
+NET "level13_test_a" IOSTANDARD = LVCMOS25;
+NET "level13_test_b" LOC = D7;
+NET "level13_test_b" IOSTANDARD = LVCMOS25;
+NET "level13_sense_a" LOC = B3;
+NET "level13_sense_a" IOSTANDARD = LVCMOS25;
+NET "level13_sense_b" LOC = A3;
+NET "level13_sense_b" IOSTANDARD = LVCMOS25;
+
+NET "level14_sense" LOC = J7;
+NET "level14_sense" IOSTANDARD = LVCMOS33;
+NET "level14_test" LOC = T9;
+NET "level14_test" IOSTANDARD = LVCMOS33;
+NET "level14_sense" PULLDOWN;
+
+NET "level15_test_n" LOC = A13;
+NET "level15_test_p" LOC = A14;
+NET "level15_sense_p" LOC = A8;
+NET "level15_sense_p" IOSTANDARD = LVDS_25;
+NET "level15_sense_n" LOC = B8;
+NET "level15_sense_n" IOSTANDARD = LVDS_25;
+
+NET "level16_sense_a" LOC = T13;
+NET "level16_sense_a" IOSTANDARD = LVCMOS33;
+NET "level16_test_b" LOC = R11;
+NET "level16_test_b" IOSTANDARD = LVCMOS33;
+NET "level16_test_a" LOC = T4;
+NET "level16_test_a" IOSTANDARD = LVCMOS33;
+
+NET "level17_test" LOC = P7;
+NET "level17_test" IOSTANDARD = LVCMOS33;
+NET "level17_sense" LOC = N8;
+NET "level17_sense" IOSTANDARD = LVCMOS33;
+NET "level17_sense" PULLDOWN;
+
+NET "level18_test" LOC = J13;
+NET "level18_test" IOSTANDARD = LVCMOS33;
+NET "level18_sense" LOC = J12;
+NET "level18_sense" IOSTANDARD = LVCMOS33;
+NET "level18_sense" PULLDOWN;
+
+NET "level19_sense_a" LOC = J14;
+NET "level19_sense_a" IOSTANDARD = LVCMOS33;
+NET "level19_test_a" LOC = E13;
+NET "level19_test_a" IOSTANDARD = LVCMOS33;
+NET "level19_test_b" LOC = H16;
+NET "level19_test_b" IOSTANDARD = LVCMOS33;
+NET "level19_sense_b" LOC = H15;
+NET "level19_sense_b" IOSTANDARD = LVCMOS33;
+
+NET "level20_sense" LOC = N14;
+NET "level20_sense" IOSTANDARD = LVCMOS33;
+NET "level20_sense" PULLUP;
+
+NET "level21_sense" LOC = L5;
+NET "level21_sense" IOSTANDARD = LVCMOS33;
+NET "level21_test" LOC = T8 |IOSTANDARD = LVCMOS33;
+NET "level21_test" IOSTANDARD = LVCMOS33;
+
+NET "level22_sense" LOC = E14;
+NET "level22_sense" IOSTANDARD = LVCMOS33;
+NET "level22_test" LOC = F13;
+NET "level22_test" IOSTANDARD = LVCMOS33;
+NET "level22_sense" PULLDOWN;
+
+NET "level_ok[0]" LOC = C1;
+NET "level_ok[0]" IOSTANDARD = LVCMOS33;
+NET "level_ok[1]" LOC = D1;
+NET "level_ok[1]" IOSTANDARD = LVCMOS33;
+NET "level_ok[2]" LOC = D3;
+NET "level_ok[2]" IOSTANDARD = LVCMOS33;
+NET "level_ok[3]" LOC = E1;
+NET "level_ok[3]" IOSTANDARD = LVCMOS33;
+NET "level_ok[4]" LOC = F1;
+NET "level_ok[4]" IOSTANDARD = LVCMOS33;
+# NOT the final location, but can rework this maybe?
+NET "level_ok[5]" LOC = C2;
+NET "level_ok[5]" IOSTANDARD = LVCMOS33;
+NET "level_ok[6]" LOC = G1;
+NET "level_ok[6]" IOSTANDARD = LVCMOS33;
+NET "level_ok[7]" LOC = H1;
+NET "level_ok[7]" IOSTANDARD = LVCMOS33;
+NET "level_ok[8]" LOC = H3;
+NET "level_ok[8]" IOSTANDARD = LVCMOS33;
+NET "level_ok[9]" LOC = J1;
+NET "level_ok[9]" IOSTANDARD = LVCMOS33;
+NET "level_ok[10]" LOC = J2;
+NET "level_ok[10]" IOSTANDARD = LVCMOS33;
+NET "level_ok[11]" LOC = K1;
+NET "level_ok[11]" IOSTANDARD = LVCMOS33;
+NET "level_ok[12]" LOC = K3;
+NET "level_ok[12]" IOSTANDARD = LVCMOS33;
+NET "level_ok[13]" LOC = M1;
+NET "level_ok[13]" IOSTANDARD = LVCMOS33;
+NET "level_ok[14]" LOC = N1;
+NET "level_ok[14]" IOSTANDARD = LVCMOS33;
+NET "level_ok[15]" LOC = N2;
+NET "level_ok[15]" IOSTANDARD = LVCMOS33;
+NET "level_ok[16]" LOC = P1;
+NET "level_ok[16]" IOSTANDARD = LVCMOS33;
+NET "level_ok[17]" LOC = P2;
+NET "level_ok[17]" IOSTANDARD = LVCMOS33;
+NET "level_ok[18]" LOC = R1;
+NET "level_ok[18]" IOSTANDARD = LVCMOS33;
+NET "level_ok[19]" LOC = J3;
+NET "level_ok[19]" IOSTANDARD = LVCMOS33;
+NET "level_ok[20]" LOC = M4;
+NET "level_ok[20]" IOSTANDARD = LVCMOS33;
+NET "level_ok[21]" LOC = N3;
+NET "level_ok[21]" IOSTANDARD = LVCMOS33;
+
+NET "clk_1mhz" LOC = N9;
+NET "clk_1mhz" IOSTANDARD = LVCMOS33;
+
+NET "clk_1mhz" TNM_NET = "clk_1mhz";
+TIMESPEC TS_clk_1mhz = PERIOD "clk_1mhz" 1 MHz HIGH 50 %;
+
+# Use really weak drive strength to avoid capacitively coupling stuff
+NET "level4_test" DRIVE = 2;
