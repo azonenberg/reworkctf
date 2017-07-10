@@ -228,7 +228,7 @@ module top(
 			level_ok[7]		<= 1'b0;
 
 		//LEVEL 9: Missing resistor
-		if(level9_test != !level9_sense)
+		if(level9_test != level9_sense)
 			level_ok[8]		<= 1'b0;
 
 		//LEVEL 10: Cannot test b/c derpy pinout
