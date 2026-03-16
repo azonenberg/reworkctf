@@ -1,1 +1,36 @@
 # reworkctf
+
+## What is it?
+
+This is a points-based challenge board intended for practicing of PCB rework and circuit editing skills. This is not a circuit *debug* challenge. The defect for each stage is well documented, your task is to correct it so that the circuit functions properly.
+
+This is also not a learn-to-solder kit. If you're not comfortable populating boards with 0402 passives and larger pitch (0.8mm) BGAs, this is probably not a project you want to undertake until you have the basics down first.
+
+That said, the challenges range from very easy to fairly difficult, so it's totally fine to try some of them then put the board on a shelf for a while until your skills improve. This is also intended to be a relatively low-cost board so you can practice without the pressure of reworking a $1000+ production platform. If you destroy a couple of these boards then get the hang of things and your third attempt succeeds, great - you've learned something.
+
+IMPORTANT NOTE: Read the challenge list before populating the front side of the PCB. Some of the BGA-site challenges have two versions, an "easy" version which can be done on a bare PCB before populating allowing easy access to the BGA footprint, and a "hard" version which requires you populate the board before doing the rework. Unless you want to do the hard version twice, don't populate the board until you've done the easier ones!
+
+## How do I complete a given challenge?
+
+It's up to you. If you are able to restore electrical connectivity to the point that the firmware lights up the "complete" LED and you've followed any restrictions listed in the problem text, you've done it. Almost all challenges are electrically testable by the MCU firmware; those that involve soldermask or silkscreen rework can be graded by visual inspection of the board. If it looks good, it probably is.
+
+The [IPC rework guides](https://www.circuitrework.com/guides/guides.html) are a good starting point.
+
+If you get really stuck on a specific challenge you can message me on Mastodon at[@azonenberg@ioc.exchange](https://ioc.exchange/@azonenberg]) but please make a reasonable attempt to plan a solution first.
+
+## I still have an old rev board, where's the info for that?
+
+The legacy revision 1 challenge, built around a Spartan-3A FPGA, can be found in the "v1" directory and is being kept there in case anybody has an old board and wants to refer to the design. Anyone building the challenge now should use the v2 design which is based on parts that (as of this writing in early 2026) are readily available and inexpensive.
+
+## What are the challenges?
+
+Rough summary
+
+* Add some silkscreen text or something
+* Solder an 0201 passive
+* Solder an 01005 passive
+* Flip an 0402 LED put on backwards
+* Clear soldermask from a SOIC pad
+* Connect a missing trace to a BGA pad (before populating)
+* Add a missing via + dogbone under a BGA (before populating)
+* Add a missing via + dogbone under a BGA (after populating)
