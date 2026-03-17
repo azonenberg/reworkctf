@@ -16,9 +16,11 @@ IMPORTANT NOTE: Read the challenge list before populating the front side of the 
 
 ## How do I complete a given challenge?
 
-It's up to you. If you are able to restore the intended electrical connectivity to the point that the firmware lights up the corresponding "complete" LED and you've followed any restrictions listed in the problem text, you've done it. Almost all challenges are electrically testable by the MCU firmware; those that involve soldermask or silkscreen rework can be graded by visual inspection of the board. If it looks good, it probably is.
+It's up to you, within reason. If you are able to restore the intended electrical connectivity to the point that the firmware lights up the corresponding "complete" LED and you've followed any restrictions listed in the problem text, you've done it. Please follow the spirit of the challenges, many of them can be "cheated" by jumpering adjacent pins on the MCU together or similar but the point of this board is skill development. If you don't actually fix the intended defect you're not learning.
 
-The [IPC rework guides](https://www.circuitrework.com/guides/guides.html) are a good starting point.
+Almost all challenges are electrically testable by the MCU firmware; those that involve soldermask or silkscreen rework can be graded by visual inspection of the board. If those look good, they probably are.
+
+The [IPC rework guides](https://www.circuitrework.com/guides/guides.html) are a good starting point for general repair techniques.
 
 If you get really stuck on a specific challenge you can message me on Mastodon at[@azonenberg@ioc.exchange](https://ioc.exchange/@azonenberg]) but please make a reasonable attempt to plan a solution first.
 

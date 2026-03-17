@@ -21,6 +21,18 @@ A dust speck landed on a photomask and caused a small dot of copper to short the
 
 An etch defect caused two signal traces to short to each other. Clear the short.
 
+### Challenge 08 (100 points)
+
+Somebody dropped a heavy tool on the board and gouged out a short segment from a trace. Reconnect the missing piece.
+
+### Challenge 09 (400 points)
+
+We swapped a differential pair for easier layout and didn't realize the SERDES macro didn't have a polarity swap bit. If that wasn't bad enough, it's on an internal layer.
+
+Swap the pair.
+
+(You must do an inner layer circuit edit for this problem. The BGA breakout traces and vias are out of scope.)
+
 ## Component
 
 ### Challenge 03 (100 points)
@@ -46,16 +58,6 @@ NOTE: The challenge 6 status LED will not illuminate unless challenge 7 has also
 While our previous technician was doing challenge 6, they got too aggressive desoldering and lifted a pad. Install a new pad on the board and restore connectivity to the pin.
 
 NOTE: The challenge 7 status LED will not illuminate unless challenge 6 has also been completed.
-
-## Conductor
-
-### Challenge 08 (100 points)
-
-Somebody dropped a heavy tool on the board and gouged out a short segment from a trace. Reconnect the missing piece.
-
-
-
-
 
 
 

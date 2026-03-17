@@ -8330,10 +8330,6 @@
 		(uuid "5251b340-e39a-412b-a27f-4578f6ba3857")
 	)
 	(no_connect
-		(at 109.22 233.68)
-		(uuid "526b881d-082c-4aba-9edb-e3ddbb92ae22")
-	)
-	(no_connect
 		(at 109.22 166.37)
 		(uuid "52b6c935-428d-462f-bc20-7e4d07a29425")
 	)
@@ -8450,10 +8446,6 @@
 		(uuid "88823295-4112-43e1-b82e-1e7872ebdef4")
 	)
 	(no_connect
-		(at 109.22 246.38)
-		(uuid "8adda4db-1d4c-48e4-8ebc-55c317df4dff")
-	)
-	(no_connect
 		(at 166.37 100.33)
 		(uuid "8c1cefe4-7282-47b3-9e0a-1b558e049875")
 	)
@@ -8508,10 +8500,6 @@
 	(no_connect
 		(at 166.37 147.32)
 		(uuid "a8924389-a863-424d-ba7a-7b5ef49027e8")
-	)
-	(no_connect
-		(at 166.37 63.5)
-		(uuid "a8ee36a5-8209-44c5-aa82-15eb4895aa3c")
 	)
 	(no_connect
 		(at 109.22 45.72)
@@ -8584,10 +8572,6 @@
 	(no_connect
 		(at 166.37 233.68)
 		(uuid "c1ed1f1b-072d-47bf-8d8d-8d060ce33350")
-	)
-	(no_connect
-		(at 109.22 228.6)
-		(uuid "c982ce0b-b890-4a0a-92c2-ad575d3ad5ce")
 	)
 	(no_connect
 		(at 166.37 110.49)
@@ -9351,6 +9335,16 @@
 		)
 		(uuid "f7e86877-8e60-4fcf-93dc-305deeac73c1")
 	)
+	(label "CHALLENGE_09_P"
+		(at 109.22 233.68 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "032b2b69-5cd4-47a5-9dd1-8d80e85cb347")
+	)
 	(label "3V3"
 		(at 27.94 260.35 180)
 		(effects
@@ -10031,6 +10025,16 @@
 		)
 		(uuid "94af514d-c04f-4ab6-8470-dc9345ac4e31")
 	)
+	(label "CHALLENGE_09_N"
+		(at 109.22 228.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "96b7760f-d535-4511-8f4a-feaad14cf0c5")
+	)
 	(label "UART_TX"
 		(at 109.22 50.8 180)
 		(effects
@@ -10140,6 +10144,16 @@
 			(justify right bottom)
 		)
 		(uuid "a6e5555c-cd2c-47f3-8a17-da9406e857c9")
+	)
+	(label "CHALLENGE_09_P"
+		(at 109.22 246.38 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a7672fc5-2105-4e8b-b6cd-6a9265784f3b")
 	)
 	(label "MCU_RST_N"
 		(at 43.18 24.13 0)
@@ -10410,6 +10424,16 @@
 			(justify right bottom)
 		)
 		(uuid "cfc7fa92-ca55-465c-b341-6613f9a3d449")
+	)
+	(label "CHALLENGE_09_N"
+		(at 166.37 63.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d04ea47d-0eee-4e0c-84fc-391b2f72dbf2")
 	)
 	(label "QSPI_CS_N"
 		(at 97.79 87.63 180)
