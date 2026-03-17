@@ -35,9 +35,13 @@ Place an 10K ohm 0201 resistor on the provided footprint.
 
 Place an 10K ohm 01005 resistor on the provided footprint.
 
-### Challenge 07 (200 points)
+### Challenge 06 (200 points)
 
 The intern who made our SOIC flash footprint forgot to put a soldermask aperture on one of the pins! Remove the component, clear the soldermask off the pad, and reconnect the flash.
+
+### Challenge 07 (300 points)
+
+While our previous technician was doing challenge 6, they got too aggressive desoldering and lifted a pad. Install a new pad on the board and restore connectivity to the pin.
 
 ## Conductor
 
