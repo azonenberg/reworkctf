@@ -8346,10 +8346,6 @@
 		(uuid "5a263a6e-9ea8-4ba3-b082-5090167e5fa2")
 	)
 	(no_connect
-		(at 166.37 55.88)
-		(uuid "5fb91200-2d76-427d-a1d9-30749348d019")
-	)
-	(no_connect
 		(at 166.37 194.31)
 		(uuid "60573c38-fc36-46da-9f44-089951108f8a")
 	)
@@ -8458,10 +8454,6 @@
 		(uuid "8adda4db-1d4c-48e4-8ebc-55c317df4dff")
 	)
 	(no_connect
-		(at 109.22 134.62)
-		(uuid "8b5c91b4-f047-4124-949e-0126e813c233")
-	)
-	(no_connect
 		(at 166.37 100.33)
 		(uuid "8c1cefe4-7282-47b3-9e0a-1b558e049875")
 	)
@@ -8472,10 +8464,6 @@
 	(no_connect
 		(at 109.22 25.4)
 		(uuid "8f6d050c-c564-47f5-8b09-828e687c9085")
-	)
-	(no_connect
-		(at 109.22 74.93)
-		(uuid "929fc159-fb83-4d43-a884-a1f157855a84")
 	)
 	(no_connect
 		(at 166.37 58.42)
@@ -8598,10 +8586,6 @@
 		(uuid "c1ed1f1b-072d-47bf-8d8d-8d060ce33350")
 	)
 	(no_connect
-		(at 109.22 35.56)
-		(uuid "c91edcc9-19d4-46e3-8199-888c7638244b")
-	)
-	(no_connect
 		(at 109.22 228.6)
 		(uuid "c982ce0b-b890-4a0a-92c2-ad575d3ad5ce")
 	)
@@ -8616,10 +8600,6 @@
 	(no_connect
 		(at 109.22 196.85)
 		(uuid "ccebab79-ea4a-4902-9f77-fa610bca62bf")
-	)
-	(no_connect
-		(at 109.22 38.1)
-		(uuid "cdfa179b-cb19-4bc5-a44b-1885f45e5536")
 	)
 	(no_connect
 		(at 166.37 210.82)
@@ -8650,16 +8630,8 @@
 		(uuid "d6de142d-8d98-4461-ab89-228d0f763ef7")
 	)
 	(no_connect
-		(at 166.37 218.44)
-		(uuid "dae06d04-e45f-46d8-8bd0-c7272b97b3ca")
-	)
-	(no_connect
 		(at 166.37 137.16)
 		(uuid "dc29d934-8216-4235-9571-0c9c4f196bd3")
-	)
-	(no_connect
-		(at 166.37 74.93)
-		(uuid "dce57059-d062-4bba-968a-fe941b0637eb")
 	)
 	(no_connect
 		(at 166.37 243.84)
@@ -8668,10 +8640,6 @@
 	(no_connect
 		(at 166.37 226.06)
 		(uuid "e3632c48-89ff-443d-bd86-d9c32ad75efb")
-	)
-	(no_connect
-		(at 109.22 72.39)
-		(uuid "e4914372-64f2-4ad5-b6ee-a5d6664b608d")
 	)
 	(no_connect
 		(at 166.37 129.54)
@@ -8692,10 +8660,6 @@
 	(no_connect
 		(at 166.37 228.6)
 		(uuid "f282cd05-0fa7-4b00-9f98-c786471b0413")
-	)
-	(no_connect
-		(at 166.37 220.98)
-		(uuid "f32de28a-cb66-4c19-92c0-37bd6aa1fdd8")
 	)
 	(no_connect
 		(at 109.22 119.38)
@@ -8849,6 +8813,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 218.44) (xy 166.37 218.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38a7f82b-2a82-4bdf-8091-16a8aca96373")
+	)
+	(wire
+		(pts
 			(xy 40.64 260.35) (xy 40.64 262.89)
 		)
 		(stroke
@@ -8989,6 +8963,16 @@
 	)
 	(wire
 		(pts
+			(xy 161.29 220.98) (xy 166.37 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "667c470c-6e87-4d0e-9c8f-650e2fcee912")
+	)
+	(wire
+		(pts
 			(xy 195.58 267.97) (xy 205.74 267.97)
 		)
 		(stroke
@@ -9036,6 +9020,16 @@
 			(type default)
 		)
 		(uuid "8108a79c-6ffd-46ed-95da-69e6c92e7a14")
+	)
+	(wire
+		(pts
+			(xy 161.29 224.79) (xy 161.29 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83544ee7-e2ca-427d-85b4-d4ae160c4113")
 	)
 	(wire
 		(pts
@@ -9209,6 +9203,16 @@
 	)
 	(wire
 		(pts
+			(xy 91.44 35.56) (xy 109.22 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1d84730-d91d-4531-8bd9-0877be510522")
+	)
+	(wire
+		(pts
 			(xy 294.64 68.58) (xy 298.45 68.58)
 		)
 		(stroke
@@ -9296,6 +9300,16 @@
 			(type default)
 		)
 		(uuid "e8bfb5b9-c0d8-4f85-a1c1-49db1a80f972")
+	)
+	(wire
+		(pts
+			(xy 147.32 224.79) (xy 161.29 224.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e95ac27c-9200-4a02-aae6-35969ce0f876")
 	)
 	(wire
 		(pts
@@ -9667,6 +9681,16 @@
 		)
 		(uuid "53ca7974-a370-4e79-9a95-1503536dc59f")
 	)
+	(label "CHALLENGE_08_A"
+		(at 166.37 74.93 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "542dd97f-4b62-4358-a35a-0b7c4c2333f4")
+	)
 	(label "JTAG_TCK"
 		(at 109.22 63.5 180)
 		(effects
@@ -9686,6 +9710,16 @@
 			(justify right bottom)
 		)
 		(uuid "566407dc-ec60-4dc2-bec0-88c64205ab25")
+	)
+	(label "CHALLENGE_02_A"
+		(at 109.22 38.1 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "56dd4158-b8b8-4968-9b8f-98a41c100a46")
 	)
 	(label "TRACECLK"
 		(at 109.22 215.9 180)
@@ -9787,6 +9821,16 @@
 		)
 		(uuid "61d8076f-78bb-4d19-9f09-36690cea5e47")
 	)
+	(label "CHALLENGE_02_B"
+		(at 109.22 134.62 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "62c1348d-ec0d-49ba-b628-e7dd5ccc5d0f")
+	)
 	(label "UART_RX"
 		(at 125.73 261.62 180)
 		(effects
@@ -9846,6 +9890,16 @@
 			(justify right bottom)
 		)
 		(uuid "6b3f6ce6-2768-4b73-b5fe-34ffd0c873d4")
+	)
+	(label "CHALLENGE_01"
+		(at 109.22 35.56 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6f3956cb-232f-49ff-a4d3-151e07ada163")
 	)
 	(label "TRACED3"
 		(at 25.4 62.23 180)
@@ -10027,6 +10081,16 @@
 		)
 		(uuid "9ab37df6-4408-4424-b8ef-66d3ec33d74a")
 	)
+	(label "3V3"
+		(at 139.7 224.79 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a1da3b7a-3240-4775-80b3-dd05c516864e")
+	)
 	(label "GND"
 		(at 27.94 267.97 180)
 		(effects
@@ -10157,6 +10221,16 @@
 		)
 		(uuid "b4bceaf6-e303-4021-a3b2-4e20baf8811c")
 	)
+	(label "CHALLENGE_02_B"
+		(at 109.22 74.93 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b56b7466-6c02-4b4c-8c80-2cacf183e1d9")
+	)
 	(label "3V3"
 		(at 43.18 16.51 0)
 		(effects
@@ -10227,6 +10301,26 @@
 		)
 		(uuid "be201041-ce17-45a4-b6f3-88e44e865553")
 	)
+	(label "3V3"
+		(at 144.78 218.44 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c048fc20-031b-43c4-bf0c-ab3ca9561ad1")
+	)
+	(label "CHALLENGE_02_A"
+		(at 109.22 72.39 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c12b277c-1d96-439f-9f01-3c207d93c2a1")
+	)
 	(label "MCU_LED13"
 		(at 279.4 158.75 180)
 		(effects
@@ -10267,6 +10361,16 @@
 		)
 		(uuid "c9bea471-1fb4-4600-9b90-98207d7b88d9")
 	)
+	(label "CHALLENGE_04"
+		(at 166.37 218.44 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cdf72d52-a54d-4d5a-889f-64b25ad890aa")
+	)
 	(label "JTAG_TMS"
 		(at 109.22 60.96 180)
 		(effects
@@ -10277,6 +10381,16 @@
 		)
 		(uuid "ce67bbfa-2ca1-44d6-9834-64a71db99846")
 	)
+	(label "CHALLENGE_05"
+		(at 161.29 224.79 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cebadc57-eb92-405b-9ab2-6c8484da8058")
+	)
 	(label "PMOD_DQ5"
 		(at 34.29 105.41 180)
 		(effects
@@ -10286,6 +10400,16 @@
 			(justify right bottom)
 		)
 		(uuid "cf67f400-86e9-4fa0-afcf-f92913b3fa3e")
+	)
+	(label "CHALLENGE_08_A"
+		(at 166.37 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cfc7fa92-ca55-465c-b341-6613f9a3d449")
 	)
 	(label "QSPI_CS_N"
 		(at 97.79 87.63 180)
@@ -14035,6 +14159,72 @@
 			(project "reworkctf-v2"
 				(path "/2cafc55c-39dd-4b2d-b0b4-dd03e5652b07"
 					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "conn:CONN_01X01")
+		(at 86.36 35.56 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "487ff0cf-628c-4f3f-b21b-4f81e79ea360")
+		(property "Reference" "J3"
+			(at 86.36 30.2725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DOT"
+			(at 86.36 32.6968 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "azonenberg_pcb:TESTPOINT_SMT_0.5MM"
+			(at 86.36 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 86.36 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Connector, single row, 01x01, pin header"
+			(at 86.36 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "26a98a66-c894-42db-b231-06dc1ce10bd7")
+		)
+		(instances
+			(project "reworkctf-v2"
+				(path "/2cafc55c-39dd-4b2d-b0b4-dd03e5652b07"
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -18449,6 +18639,73 @@
 		)
 	)
 	(symbol
+		(lib_id "device:R")
+		(at 148.59 218.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "739cc807-8f38-4c02-a118-db56624d8ee5")
+		(property "Reference" "R36"
+			(at 148.59 215.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10K"
+			(at 148.59 218.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "azonenberg_pcb:EIA_0201_RES_NOSILK"
+			(at 148.59 220.218 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 148.59 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 148.59 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d05e2f9f-da04-4fb9-8114-5bf4074e8876")
+		)
+		(pin "1"
+			(uuid "d40ab536-a239-4bcf-8a3c-d1a8da49bbdd")
+		)
+		(instances
+			(project "reworkctf-v2"
+				(path "/2cafc55c-39dd-4b2d-b0b4-dd03e5652b07"
+					(reference "R36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "conn:CONN_01X01")
 		(at 361.95 142.24 0)
 		(unit 1)
@@ -19489,6 +19746,73 @@
 			(project "reworkctf-v2"
 				(path "/2cafc55c-39dd-4b2d-b0b4-dd03e5652b07"
 					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "device:R")
+		(at 143.51 224.79 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "a751c138-ad89-4676-97ef-3a20b18f5f29")
+		(property "Reference" "R37"
+			(at 143.51 222.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10K"
+			(at 143.51 224.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "azonenberg_pcb:EIA_01005_RES_NOSILK"
+			(at 143.51 226.568 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 143.51 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7286a4a7-54de-439e-aaac-d6391ff7b21d")
+		)
+		(pin "1"
+			(uuid "210676ff-5fc1-4b5c-a9ac-90b046fed4ee")
+		)
+		(instances
+			(project "reworkctf-v2"
+				(path "/2cafc55c-39dd-4b2d-b0b4-dd03e5652b07"
+					(reference "R37")
 					(unit 1)
 				)
 			)
@@ -24194,7 +24518,7 @@
 	)
 	(symbol
 		(lib_id "device:LED")
-		(at 290.83 49.53 180)
+		(at 290.83 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -24203,7 +24527,7 @@
 		(fields_autoplaced yes)
 		(uuid "fafd2f5e-e241-4add-a9f0-8aea16db2173")
 		(property "Reference" "D3"
-			(at 292.4302 43.2265 0)
+			(at 289.2298 44.1409 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24211,7 +24535,7 @@
 			)
 		)
 		(property "Value" "GREEN"
-			(at 292.4302 45.6508 0)
+			(at 289.2298 46.5652 0)
 			(effects
 				(font
 					(size 1.27 1.27)

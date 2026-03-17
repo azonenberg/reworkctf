@@ -36,4 +36,4 @@ Surface trace cuts and rerouting require a scalpel or rotary tool/mill with very
 
 ## What are the challenges?
 
-See [the list here](/CHALLENGES.md)
+See [the list here](/CHALLENGES.md). Each challenge is marked with silkscreened text on the PCB to make it easy to find.

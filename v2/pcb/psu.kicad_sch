@@ -10037,7 +10037,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
+		(property "Footprint" "lain:GCT_USB4500-03-0-A"
 			(at 36.83 39.37 0)
 			(effects
 				(font
