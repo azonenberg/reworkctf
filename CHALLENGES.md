@@ -39,9 +39,13 @@ Place an 10K ohm 01005 resistor on the provided footprint.
 
 The intern who made our SOIC flash footprint forgot to put a soldermask aperture on one of the pins! Remove the component, clear the soldermask off the pad, and reconnect the flash.
 
+NOTE: The challenge 6 status LED will not illuminate unless challenge 7 has also been completed.
+
 ### Challenge 07 (300 points)
 
 While our previous technician was doing challenge 6, they got too aggressive desoldering and lifted a pad. Install a new pad on the board and restore connectivity to the pin.
+
+NOTE: The challenge 7 status LED will not illuminate unless challenge 6 has also been completed.
 
 ## Conductor
 
