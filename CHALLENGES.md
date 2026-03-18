@@ -8,6 +8,10 @@ These challenges are not electronically gradeable, so they're numbered separatel
 
 Oops, we forgot to label the debug connector! Mark it "JTAG" in white ink.
 
+### SM-2 (100 points)
+
+There's a big hole in the soldermask on the back of the board. Don't ask how it got there, just fix it.
+
 ### TODO
 
 
