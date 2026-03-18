@@ -8226,10 +8226,6 @@
 		(uuid "086cc81a-9335-4889-bf67-b36bb5262fb3")
 	)
 	(no_connect
-		(at 109.22 105.41)
-		(uuid "09f992ce-a581-49d2-86aa-6010938a386c")
-	)
-	(no_connect
 		(at 109.22 238.76)
 		(uuid "0a2e0b01-fc78-48b3-a423-4f0043db345d")
 	)
@@ -8390,10 +8386,6 @@
 		(uuid "7446c371-63fb-411c-a0a6-568e9025909a")
 	)
 	(no_connect
-		(at 166.37 142.24)
-		(uuid "75d83712-8af7-44e4-ac83-1392a08160e9")
-	)
-	(no_connect
 		(at 217.17 45.72)
 		(uuid "7837ad2d-c817-4322-97b8-790410ebf7a6")
 	)
@@ -8418,16 +8410,16 @@
 		(uuid "7c3f0929-7805-4885-b0ee-dee8bf1e98b8")
 	)
 	(no_connect
-		(at 166.37 66.04)
-		(uuid "7d9c2043-a669-4861-8ec8-4d253dce5817")
-	)
-	(no_connect
 		(at 109.22 168.91)
 		(uuid "7dff41d8-8bae-43c7-af8e-bea057c28909")
 	)
 	(no_connect
 		(at 109.22 139.7)
 		(uuid "7e88c3da-d02f-4760-af08-543abb76c650")
+	)
+	(no_connect
+		(at 109.22 105.41)
+		(uuid "7f0ef40f-c8cc-42d0-b240-5952953742e6")
 	)
 	(no_connect
 		(at 217.17 43.18)
@@ -8440,10 +8432,6 @@
 	(no_connect
 		(at 166.37 191.77)
 		(uuid "86817bec-85a3-4b00-a0fe-342ec16f5cf0")
-	)
-	(no_connect
-		(at 109.22 241.3)
-		(uuid "88823295-4112-43e1-b82e-1e7872ebdef4")
 	)
 	(no_connect
 		(at 166.37 100.33)
@@ -8472,10 +8460,6 @@
 	(no_connect
 		(at 217.17 40.64)
 		(uuid "9ac014e5-fed0-40f2-b518-c7c1c7e07ef4")
-	)
-	(no_connect
-		(at 166.37 139.7)
-		(uuid "9c70d790-d767-4e82-9586-bebf5aeb731e")
 	)
 	(no_connect
 		(at 109.22 231.14)
@@ -9425,6 +9409,16 @@
 		)
 		(uuid "1b6c6bde-21d7-40f1-bb91-fe4e2cdd861e")
 	)
+	(label "CHALLENGE_10"
+		(at 166.37 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1c17ba6c-45af-4c4b-a6bd-50e5dfda4b30")
+	)
 	(label "MCU_LED4"
 		(at 217.17 33.02 180)
 		(effects
@@ -9835,6 +9829,16 @@
 		)
 		(uuid "63e7e7e9-8ef4-4969-b4de-d1a025870b89")
 	)
+	(label "CHALLENGE_11"
+		(at 209.55 133.35 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "645bef11-46cd-4eb0-b6af-e3ed2f21466b")
+	)
 	(label "MCU_LED12"
 		(at 279.4 148.59 180)
 		(effects
@@ -10014,6 +10018,16 @@
 			(justify right bottom)
 		)
 		(uuid "892aeb23-07d7-40ca-964f-a4954f7bcfd3")
+	)
+	(label "3V3"
+		(at 217.17 133.35 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8dfdec7e-fdbf-428a-a2d1-22c91499c648")
 	)
 	(label "3V3"
 		(at 195.58 262.89 180)
@@ -10375,6 +10389,16 @@
 		)
 		(uuid "c9bea471-1fb4-4600-9b90-98207d7b88d9")
 	)
+	(label "CHALLENGE_11"
+		(at 166.37 139.7 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cd091594-bc97-460f-ab98-964a64d48b7b")
+	)
 	(label "CHALLENGE_04"
 		(at 166.37 218.44 180)
 		(effects
@@ -10575,6 +10599,16 @@
 		)
 		(uuid "e5240351-d238-4af7-9244-abb07d2377e2")
 	)
+	(label "CHALLENGE_11"
+		(at 166.37 142.24 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e66cb635-5cd2-4240-a525-ca79d9e7446e")
+	)
 	(label "MCU_LED5"
 		(at 109.22 48.26 180)
 		(effects
@@ -10584,6 +10618,16 @@
 			(justify right bottom)
 		)
 		(uuid "e8364ebc-e16a-419d-a52b-b498f3c43a0c")
+	)
+	(label "CHALLENGE_10"
+		(at 109.22 241.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "edbf1d94-2545-4ba0-9a7b-71eb91d8fc88")
 	)
 	(label "MCU_LED3"
 		(at 166.37 77.47 180)
@@ -23254,6 +23298,74 @@
 				(path "/2cafc55c-39dd-4b2d-b0b4-dd03e5652b07"
 					(reference "U1")
 					(unit 8)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "device:R")
+		(at 213.36 133.35 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e96fff98-5a0a-4c36-8d5a-0668c72afa4c")
+		(property "Reference" "R38"
+			(at 213.36 128.1895 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 213.36 130.6138 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "azonenberg_pcb:EIA_0402_RES_NOSILK"
+			(at 213.36 135.128 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 213.36 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 213.36 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0dbb20fa-a1e4-4ab7-aeb2-68261fcbd4ad")
+		)
+		(pin "1"
+			(uuid "0eed1fa5-8dee-433e-831a-061b132edd38")
+		)
+		(instances
+			(project "reworkctf-v2"
+				(path "/2cafc55c-39dd-4b2d-b0b4-dd03e5652b07"
+					(reference "R38")
+					(unit 1)
 				)
 			)
 		)

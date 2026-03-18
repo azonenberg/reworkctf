@@ -25,9 +25,19 @@ An etch defect caused two signal traces to short to each other. Clear the short.
 
 Somebody dropped a heavy tool on the board and gouged out a short segment from a trace. Reconnect the missing piece.
 
+## Multilayer Conductor / Via
+
 ### Challenge 09 (400 points)
 
 We swapped a differential pair for easier layout and didn't realize the SERDES macro didn't have a polarity swap bit. If that wasn't bad enough, it's on an internal layer.
+
+### Challenge 10 (300 points)
+
+Somehow we forgot a via between the top and bottom layer. Restore the connection.
+
+### Challenge 11 (400 points)
+
+A zone fill got screwed up and a via from front to back is shorted to the power plane. Clear the short but preserve the intended connection.
 
 Swap the pair.
 
