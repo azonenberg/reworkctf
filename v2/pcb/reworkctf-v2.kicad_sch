@@ -8295,6 +8295,10 @@
 		(uuid "0a2e0b01-fc78-48b3-a423-4f0043db345d")
 	)
 	(no_connect
+		(at 109.22 100.33)
+		(uuid "1224745b-0ce6-4370-a804-5ab7cc83d52b")
+	)
+	(no_connect
 		(at 109.22 127)
 		(uuid "124fab9e-33a5-4acd-b51f-f452e9f85eee")
 	)
@@ -8333,10 +8337,6 @@
 	(no_connect
 		(at 166.37 72.39)
 		(uuid "2395ded1-20f3-480a-8fba-fb3d4b2a1400")
-	)
-	(no_connect
-		(at 109.22 154.94)
-		(uuid "264adde0-c282-44dc-8db8-0c3f5e7aaa70")
 	)
 	(no_connect
 		(at 166.37 152.4)
@@ -8397,10 +8397,6 @@
 	(no_connect
 		(at 109.22 204.47)
 		(uuid "580f5814-7b34-4bd3-8c44-65648bc52a99")
-	)
-	(no_connect
-		(at 109.22 100.33)
-		(uuid "5a263a6e-9ea8-4ba3-b082-5090167e5fa2")
 	)
 	(no_connect
 		(at 166.37 194.31)
@@ -8483,10 +8479,6 @@
 		(uuid "7e88c3da-d02f-4760-af08-543abb76c650")
 	)
 	(no_connect
-		(at 109.22 105.41)
-		(uuid "7f0ef40f-c8cc-42d0-b240-5952953742e6")
-	)
-	(no_connect
 		(at 217.17 43.18)
 		(uuid "80d88434-a798-4d06-b5c4-0c7e5db965b9")
 	)
@@ -8567,10 +8559,6 @@
 		(uuid "ad2f413c-fab1-4498-b9c9-e6b01c47300b")
 	)
 	(no_connect
-		(at 166.37 179.07)
-		(uuid "af2d6997-9f48-40f4-95ac-571164998e6a")
-	)
-	(no_connect
 		(at 166.37 35.56)
 		(uuid "afacf6b9-b6d7-4c4b-b509-4f443085779c")
 	)
@@ -8593,14 +8581,6 @@
 	(no_connect
 		(at 109.22 85.09)
 		(uuid "b570e269-2575-4dd3-bcb8-d67405a2039a")
-	)
-	(no_connect
-		(at 166.37 181.61)
-		(uuid "b5894815-eb52-4eca-ac0b-1b86a945cd23")
-	)
-	(no_connect
-		(at 109.22 97.79)
-		(uuid "b5fe3afa-44dc-4ced-95e1-ac7fcc1a07de")
 	)
 	(no_connect
 		(at 109.22 95.25)
@@ -8687,10 +8667,6 @@
 		(uuid "f17989cc-b329-4079-a01a-3e5f8d5cceb5")
 	)
 	(no_connect
-		(at 109.22 102.87)
-		(uuid "f1f65424-6263-44c4-b5c9-bf7f13528804")
-	)
-	(no_connect
 		(at 166.37 228.6)
 		(uuid "f282cd05-0fa7-4b00-9f98-c786471b0413")
 	)
@@ -8705,10 +8681,6 @@
 	(no_connect
 		(at 109.22 243.84)
 		(uuid "fce81a04-6b25-42fd-97e6-8422a2522049")
-	)
-	(no_connect
-		(at 166.37 144.78)
-		(uuid "fdf77ce1-5471-42ce-8ba6-d54d95261061")
 	)
 	(no_connect
 		(at 166.37 231.14)
@@ -9126,6 +9098,16 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 179.07) (xy 166.37 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6502652-7961-4f9c-b98a-31f5b030ae33")
+	)
+	(wire
+		(pts
 			(xy 294.64 39.37) (xy 298.45 39.37)
 		)
 		(stroke
@@ -9414,6 +9396,16 @@
 		)
 		(uuid "0941884f-90b6-44b0-8aa4-86c365e263f1")
 	)
+	(label "CHALLENGE_14"
+		(at 109.22 97.79 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "095c0152-2ec5-443b-91fc-9c2c51187f27")
+	)
 	(label "PMOD_DQ3"
 		(at 109.22 160.02 180)
 		(effects
@@ -9474,6 +9466,16 @@
 		)
 		(uuid "1b6c6bde-21d7-40f1-bb91-fe4e2cdd861e")
 	)
+	(label "CHALLENGE_14"
+		(at 166.37 144.78 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1be30b53-8e08-4e0e-aa90-2e041f33785a")
+	)
 	(label "CHALLENGE_10"
 		(at 166.37 66.04 180)
 		(effects
@@ -9523,6 +9525,16 @@
 			(justify right bottom)
 		)
 		(uuid "236353c6-0231-4307-aaa3-9fc649021609")
+	)
+	(label "CHALLENGE_13"
+		(at 109.22 105.41 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "241dd102-537b-4496-ab88-f149a5ef156b")
 	)
 	(label "PMOD2_DQ0"
 		(at 109.22 179.07 180)
@@ -9753,6 +9765,16 @@
 			(justify right bottom)
 		)
 		(uuid "549c66c8-94f1-4f6d-889c-45ec26b2f1db")
+	)
+	(label "CHALLENGE_13"
+		(at 109.22 102.87 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "55cca21f-f552-4a9f-bedf-75de5844bd63")
 	)
 	(label "MCU_LED9"
 		(at 279.4 119.38 180)
@@ -10094,6 +10116,16 @@
 		)
 		(uuid "8dfdec7e-fdbf-428a-a2d1-22c91499c648")
 	)
+	(label "CHALLENGE_15"
+		(at 109.22 154.94 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8e978108-e950-4f31-b8bf-f16315a237d8")
+	)
 	(label "3V3"
 		(at 195.58 262.89 180)
 		(effects
@@ -10234,6 +10266,16 @@
 		)
 		(uuid "a7672fc5-2105-4e8b-b6cd-6a9265784f3b")
 	)
+	(label "CHALLENGE_12"
+		(at 166.37 181.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a7e85ef2-04c9-440c-9b45-0e267d1f6f0e")
+	)
 	(label "MCU_RST_N"
 		(at 43.18 24.13 0)
 		(effects
@@ -10273,6 +10315,16 @@
 			(justify right bottom)
 		)
 		(uuid "aed11ce1-6a6e-4893-9f9b-7a2202f3969c")
+	)
+	(label "CHALLENGE_12"
+		(at 166.37 179.07 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "aef67383-0457-4391-b946-27f7b33dbb7a")
 	)
 	(label "TRACED1"
 		(at 166.37 107.95 180)
@@ -21121,6 +21173,71 @@
 				(path "/2cafc55c-39dd-4b2d-b0b4-dd03e5652b07"
 					(reference "U1")
 					(unit 11)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "conn:CONN_01X01")
+		(at 142.24 179.07 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b1ec308d-853e-45fb-af5a-f75f536518b6")
+		(property "Reference" "J4"
+			(at 142.24 173.7825 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TESTPOINT"
+			(at 142.24 176.2068 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "azonenberg_pcb:TESTPOINT_SMT_0.5MM"
+			(at 142.24 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Connector, single row, 01x01, pin header"
+			(at 142.24 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ff0c22ce-0286-408c-95b3-5331e611236a")
+		)
+		(instances
+			(project "reworkctf-v2"
+				(path "/2cafc55c-39dd-4b2d-b0b4-dd03e5652b07"
+					(reference "J4")
+					(unit 1)
 				)
 			)
 		)

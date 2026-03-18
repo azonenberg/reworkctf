@@ -12,9 +12,6 @@ Oops, we forgot to label the debug connector! Mark it "JTAG" in white ink.
 
 There's a big hole in the soldermask on the back of the board. Don't ask how it got there, just fix it.
 
-### TODO
-
-
 ## Surface Conductor
 
 ### Challenge 01 (100 points)
@@ -35,6 +32,10 @@ Somebody dropped a heavy tool on the board and gouged out a short segment from a
 
 We swapped a differential pair for easier layout and didn't realize the SERDES macro didn't have a polarity swap bit. If that wasn't bad enough, it's on an internal layer.
 
+Swap the pair.
+
+(You must do an inner layer circuit edit for this problem. The BGA breakout traces and vias are out of scope.)
+
 ### Challenge 10 (300 points)
 
 Somehow we forgot a via between the top and bottom layer. Restore the connection.
@@ -43,11 +44,11 @@ Somehow we forgot a via between the top and bottom layer. Restore the connection
 
 A zone fill got screwed up and a via from front to back is shorted to the power plane. Clear the short but preserve the intended connection.
 
-Swap the pair.
+### Challenge 15 (100 points)
 
-(You must do an inner layer circuit edit for this problem. The BGA breakout traces and vias are out of scope.)
+Somebody forgot a pullup on an open-drain signal. Add a 10K resistor from the trace to the 3V3 rail.
 
-## Component
+## SMT Component
 
 ### Challenge 03 (100 points)
 
@@ -73,17 +74,23 @@ While our previous technician was doing challenge 6, they got too aggressive des
 
 NOTE: The challenge 7 status LED will not illuminate unless challenge 6 has also been completed.
 
+## BGA
 
+### Challenge 12 (300 points)
 
+Our solder paste is expired and two balls didn't get good paste coverage so they're not making good contact. Fix it.
 
+(A test point is provided to allow electrical measurements of the test signal)
 
-Rough summary
+### Challenge 13 (400 points)
 
+Our BGA breakout generator script had a bug and one of the BGA breakout vias is missing a dogbone trace. Luckily, we discovered the problem BEFORE populating the board, so you have easy access to the BGA site.
 
-* Solder an 0201 passive
-* Solder an 01005 passive
-* Flip an 0402 LED put on backwards
-* Clear soldermask from a SOIC pad
+### Challenge 14 (500 points)
+
+This is the same exact defect as challenge 13, except somehow it went unnoticed until the board was populated. Have fun.
+
+TODO
 * Connect a missing trace to a BGA pad (before populating)
 * Add a missing via + dogbone under a BGA (before populating)
 * Add a missing via + dogbone under a BGA (after populating)

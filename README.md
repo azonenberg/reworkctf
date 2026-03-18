@@ -14,6 +14,9 @@ And if the board survives, you've got a STM32H750 dev platform with a UART, two 
 
 IMPORTANT NOTE: Read the challenge list before populating the front side of the PCB. Some of the BGA-site challenges have two versions, an "easy" version which can be done on a bare PCB before populating allowing easy access to the BGA footprint, and a "hard" version which requires you populate the board before doing the rework. Unless you want to do the hard version twice, don't populate the board until you've done the easier ones. This does require doing some of the challenges out of order, unless you want to make two boards and do different challenges on each.
 
+Most notably, the following challenges should be done before populating the BGA:
+* Challenge 13
+
 ## How do I complete a given challenge?
 
 It's up to you, within reason. If you are able to restore the intended electrical connectivity to the point that the firmware lights up the corresponding "complete" LED and you've followed any restrictions listed in the problem text, you've done it. Please follow the spirit of the challenges, many of them can be "cheated" by jumpering adjacent pins on the MCU together or similar but the point of this board is skill development. If you don't actually fix the intended defect you're not learning.
