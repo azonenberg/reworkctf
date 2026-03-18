@@ -10476,6 +10476,16 @@
 		)
 		(uuid "c1c85965-d3c2-41ca-857c-170d16b298a7")
 	)
+	(label "GND"
+		(at 367.03 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c45d0cc8-3a8b-4e46-a718-e354b868f954")
+	)
 	(label "JTAG_TDI"
 		(at 25.4 41.91 180)
 		(effects
@@ -10715,6 +10725,16 @@
 			(justify right bottom)
 		)
 		(uuid "e5240351-d238-4af7-9244-abb07d2377e2")
+	)
+	(label "3V3"
+		(at 367.03 110.49 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e54e45af-c55f-4337-a529-82fe119a534c")
 	)
 	(label "CHALLENGE_11"
 		(at 166.37 142.24 180)
@@ -19158,6 +19178,72 @@
 		)
 	)
 	(symbol
+		(lib_id "conn:CONN_01X01")
+		(at 361.95 119.38 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "866f2c97-eb84-46b9-aeb7-f555a84692ef")
+		(property "Reference" "J17"
+			(at 361.95 114.0925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TESTPOINT"
+			(at 361.95 116.5168 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "azonenberg_pcb:TESTPOINT_SMT_0.5MM"
+			(at 361.95 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 361.95 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Connector, single row, 01x01, pin header"
+			(at 361.95 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3e78869b-7317-4b29-b312-f5ffe10df49e")
+		)
+		(instances
+			(project "reworkctf-v2"
+				(path "/2cafc55c-39dd-4b2d-b0b4-dd03e5652b07"
+					(reference "J17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "special-azonenberg:PMOD_HOST")
 		(at 39.37 152.4 0)
 		(unit 1)
@@ -20194,6 +20280,72 @@
 			(project "reworkctf-v2"
 				(path "/2cafc55c-39dd-4b2d-b0b4-dd03e5652b07"
 					(reference "D12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "conn:CONN_01X01")
+		(at 361.95 110.49 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ac927191-9488-4512-adae-a337954e5d77")
+		(property "Reference" "J16"
+			(at 361.95 105.2025 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TESTPOINT"
+			(at 361.95 107.6268 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "azonenberg_pcb:TESTPOINT_SMT_0.5MM"
+			(at 361.95 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 361.95 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Connector, single row, 01x01, pin header"
+			(at 361.95 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a081245c-9201-401b-bb7e-78ec25d11a9e")
+		)
+		(instances
+			(project "reworkctf-v2"
+				(path "/2cafc55c-39dd-4b2d-b0b4-dd03e5652b07"
+					(reference "J16")
 					(unit 1)
 				)
 			)
