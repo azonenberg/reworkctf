@@ -25102,6 +25102,48 @@
 			)
 		)
 	)
+	(sheet
+		(at 344.805 16.51)
+		(size 31.115 24.765)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "85c0363d-2b84-4ab7-9543-8fe3ac5e6d6f")
+		(property "Sheetname" "Free Play Area"
+			(at 344.805 15.7984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "free-play.kicad_sch"
+			(at 344.805 41.8596 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "reworkctf-v2"
+				(path "/2cafc55c-39dd-4b2d-b0b4-dd03e5652b07"
+					(page "3")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")

@@ -1,0 +1,1273 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "93620c2b-49b3-47ab-a082-f5fbf01186e3")
+	(paper "A4")
+	(lib_symbols
+		(symbol "device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "r res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_* R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(no_connect
+		(at 52.07 57.15)
+		(uuid "04eb8dbf-5e61-4884-95c0-caf7b7fb1433")
+	)
+	(no_connect
+		(at 27.94 57.15)
+		(uuid "12297388-b43c-477a-9c7b-9d83bdeeb497")
+	)
+	(no_connect
+		(at 20.32 21.59)
+		(uuid "1582f354-8089-4e67-9047-6f4f850e03c8")
+	)
+	(no_connect
+		(at 40.64 21.59)
+		(uuid "2703ae48-a2da-4222-aec7-5f7d58dd6ee8")
+	)
+	(no_connect
+		(at 44.45 21.59)
+		(uuid "2b0c7485-e09d-470b-8d8d-5be9564c75da")
+	)
+	(no_connect
+		(at 44.45 39.37)
+		(uuid "355ce3d0-6772-479e-96c3-be200ecdeca2")
+	)
+	(no_connect
+		(at 40.64 30.48)
+		(uuid "3947164a-da6e-4283-999f-8d159493d5f9")
+	)
+	(no_connect
+		(at 33.02 39.37)
+		(uuid "415a136b-a77a-4384-b1c6-e0dc0567dd34")
+	)
+	(no_connect
+		(at 33.02 30.48)
+		(uuid "42e4c4e7-1a85-4471-9ce1-fdcba690a267")
+	)
+	(no_connect
+		(at 40.64 48.26)
+		(uuid "48d449cf-bf39-4efa-8ce0-5f1ee2c8243e")
+	)
+	(no_connect
+		(at 33.02 48.26)
+		(uuid "4a1fe810-a9f5-4b2f-9c6a-12490ed87f0a")
+	)
+	(no_connect
+		(at 52.07 30.48)
+		(uuid "637b45d0-cb21-48b8-a4cb-cc8d51391eb2")
+	)
+	(no_connect
+		(at 20.32 48.26)
+		(uuid "6426d572-2826-42d4-a758-59dd102b7fcf")
+	)
+	(no_connect
+		(at 20.32 57.15)
+		(uuid "69b6987e-17e4-480b-8876-6b2e2f280d6b")
+	)
+	(no_connect
+		(at 27.94 30.48)
+		(uuid "6d4b05f6-656e-41a3-ab38-fafe53b8b2e9")
+	)
+	(no_connect
+		(at 27.94 21.59)
+		(uuid "728c8ec8-a537-4f6c-85c8-fae118a2b5b1")
+	)
+	(no_connect
+		(at 52.07 39.37)
+		(uuid "7e7503eb-b6b6-445b-b572-c58a7b110bf9")
+	)
+	(no_connect
+		(at 52.07 21.59)
+		(uuid "7f2ea6e5-888c-408a-b906-d9d16f0299c1")
+	)
+	(no_connect
+		(at 40.64 57.15)
+		(uuid "80ca0df9-8e12-4e9b-b960-719fb846a7fe")
+	)
+	(no_connect
+		(at 44.45 57.15)
+		(uuid "853dca76-4d9e-406a-a06e-bb89f93e8c13")
+	)
+	(no_connect
+		(at 27.94 39.37)
+		(uuid "8d4c4d75-ec1a-4d09-a88f-b725f7ab1cd2")
+	)
+	(no_connect
+		(at 44.45 30.48)
+		(uuid "affdf46e-4c70-4745-89e8-88c6ea29d4df")
+	)
+	(no_connect
+		(at 52.07 48.26)
+		(uuid "b3f5fdef-17c4-41ae-a096-5b6fb58f400c")
+	)
+	(no_connect
+		(at 20.32 30.48)
+		(uuid "bbf440d7-a438-4027-a811-46aaabeb0000")
+	)
+	(no_connect
+		(at 27.94 48.26)
+		(uuid "c05d233b-ab66-4a08-bac3-cae4145c19a1")
+	)
+	(no_connect
+		(at 20.32 39.37)
+		(uuid "c2716a73-5189-4aab-8e9a-80d1b125c911")
+	)
+	(no_connect
+		(at 40.64 39.37)
+		(uuid "c5b1349f-f7ef-4bfb-97f0-c4b5172bf7f5")
+	)
+	(no_connect
+		(at 33.02 57.15)
+		(uuid "d05af34a-80f0-40da-9684-7c0d8c2a47fb")
+	)
+	(no_connect
+		(at 44.45 48.26)
+		(uuid "e7263867-adb9-4339-b404-36bde7c854a5")
+	)
+	(no_connect
+		(at 33.02 21.59)
+		(uuid "fc0e5a17-d9b7-437d-93a7-79aa6c963b08")
+	)
+	(symbol
+		(lib_id "device:R")
+		(at 48.26 57.15 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "015b5404-ed30-4b5b-a6d6-9cd2e033e460")
+		(property "Reference" "R53"
+			(at 48.26 51.9895 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 48.26 54.4138 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "azonenberg_pcb:EIA_0402_RES_NOSILK"
+			(at 48.26 58.928 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 48.26 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f036b0ee-327d-4e60-904d-17a8cf0c7d4c")
+		)
+		(pin "1"
+			(uuid "5d39ef44-9d73-4afa-a102-fbea1b4a22b1")
+		)
+		(instances
+			(project "reworkctf-v2"
+				(path "/2cafc55c-39dd-4b2d-b0b4-dd03e5652b07/85c0363d-2b84-4ab7-9543-8fe3ac5e6d6f"
+					(reference "R53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "device:R")
+		(at 24.13 21.59 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "1d68d023-e6ef-4017-88d9-61e207c14c1c")
+		(property "Reference" "R39"
+			(at 24.13 16.4295 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 24.13 18.8538 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "azonenberg_pcb:EIA_0402_RES_NOSILK"
+			(at 24.13 23.368 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 24.13 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 24.13 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d714c26a-d6df-44ec-b3b8-ba28787ef48a")
+		)
+		(pin "1"
+			(uuid "a67aad80-5820-4cfa-9201-81dd9eaf787f")
+		)
+		(instances
+			(project "reworkctf-v2"
+				(path "/2cafc55c-39dd-4b2d-b0b4-dd03e5652b07/85c0363d-2b84-4ab7-9543-8fe3ac5e6d6f"
+					(reference "R39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "device:R")
+		(at 24.13 30.48 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "27d5f919-ad7e-48aa-9245-d85e6366cf12")
+		(property "Reference" "R40"
+			(at 24.13 25.3195 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 24.13 27.7438 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "azonenberg_pcb:EIA_0402_RES_NOSILK"
+			(at 24.13 32.258 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 24.13 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 24.13 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "be5b9217-2496-48a4-9881-eb38e8d7154b")
+		)
+		(pin "1"
+			(uuid "6b05a0cb-7eaa-4f7b-8ba8-fedb9922444b")
+		)
+		(instances
+			(project "reworkctf-v2"
+				(path "/2cafc55c-39dd-4b2d-b0b4-dd03e5652b07/85c0363d-2b84-4ab7-9543-8fe3ac5e6d6f"
+					(reference "R40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "device:R")
+		(at 36.83 30.48 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "2a08c4e7-3d39-43ae-9240-8b92d9826729")
+		(property "Reference" "R45"
+			(at 36.83 25.3195 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 36.83 27.7438 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "azonenberg_pcb:EIA_0402_RES_NOSILK"
+			(at 36.83 32.258 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 36.83 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "89f70d28-5b6f-4780-9958-a29c612c11e3")
+		)
+		(pin "1"
+			(uuid "405a303a-849a-46db-b84b-51388ac12781")
+		)
+		(instances
+			(project "reworkctf-v2"
+				(path "/2cafc55c-39dd-4b2d-b0b4-dd03e5652b07/85c0363d-2b84-4ab7-9543-8fe3ac5e6d6f"
+					(reference "R45")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "device:R")
+		(at 36.83 39.37 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "44c14eac-d555-423c-8088-0b79c324eae1")
+		(property "Reference" "R46"
+			(at 36.83 34.2095 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 36.83 36.6338 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "azonenberg_pcb:EIA_0402_RES_NOSILK"
+			(at 36.83 41.148 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 36.83 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ca415537-663b-4f07-80dd-5faa66e5be3a")
+		)
+		(pin "1"
+			(uuid "6728f9eb-660d-4fc5-a85b-0ec8b13eff2f")
+		)
+		(instances
+			(project "reworkctf-v2"
+				(path "/2cafc55c-39dd-4b2d-b0b4-dd03e5652b07/85c0363d-2b84-4ab7-9543-8fe3ac5e6d6f"
+					(reference "R46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "device:R")
+		(at 48.26 21.59 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "83a6d871-f570-4b9f-bcd5-c6567f3db5f2")
+		(property "Reference" "R49"
+			(at 48.26 16.4295 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 48.26 18.8538 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "azonenberg_pcb:EIA_0402_RES_NOSILK"
+			(at 48.26 23.368 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 48.26 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "730fb767-bb6c-467d-83c1-d6b7674b5ae0")
+		)
+		(pin "1"
+			(uuid "3c1a2474-ad11-471c-8074-778d490753f0")
+		)
+		(instances
+			(project "reworkctf-v2"
+				(path "/2cafc55c-39dd-4b2d-b0b4-dd03e5652b07/85c0363d-2b84-4ab7-9543-8fe3ac5e6d6f"
+					(reference "R49")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "device:R")
+		(at 36.83 21.59 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "96c2e568-6c0e-46a5-8bb9-3261320490fb")
+		(property "Reference" "R44"
+			(at 36.83 16.4295 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 36.83 18.8538 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "azonenberg_pcb:EIA_0402_RES_NOSILK"
+			(at 36.83 23.368 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 36.83 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c24aef3a-45e3-42f8-9521-3ffd1ca992ed")
+		)
+		(pin "1"
+			(uuid "895fae08-8a46-4b02-a2cc-e9b4fc69209c")
+		)
+		(instances
+			(project "reworkctf-v2"
+				(path "/2cafc55c-39dd-4b2d-b0b4-dd03e5652b07/85c0363d-2b84-4ab7-9543-8fe3ac5e6d6f"
+					(reference "R44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "device:R")
+		(at 48.26 39.37 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "b5443803-4190-48fe-ba0e-46f2be74c582")
+		(property "Reference" "R51"
+			(at 48.26 34.2095 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 48.26 36.6338 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "azonenberg_pcb:EIA_0402_RES_NOSILK"
+			(at 48.26 41.148 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 48.26 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1b39bf3e-b46e-4144-96a9-82327e6b9f04")
+		)
+		(pin "1"
+			(uuid "9b6d7e38-ec49-48c6-a351-bafee65e24b2")
+		)
+		(instances
+			(project "reworkctf-v2"
+				(path "/2cafc55c-39dd-4b2d-b0b4-dd03e5652b07/85c0363d-2b84-4ab7-9543-8fe3ac5e6d6f"
+					(reference "R51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "device:R")
+		(at 24.13 39.37 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "c854e5b2-fe6a-4d70-a6ce-2db4d533b0fb")
+		(property "Reference" "R41"
+			(at 24.13 34.2095 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 24.13 36.6338 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "azonenberg_pcb:EIA_0402_RES_NOSILK"
+			(at 24.13 41.148 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 24.13 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 24.13 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d425c6c5-90e1-4346-8344-ca66e66afe02")
+		)
+		(pin "1"
+			(uuid "52d1d0a3-a95e-4ed7-baf3-47817840c7e2")
+		)
+		(instances
+			(project "reworkctf-v2"
+				(path "/2cafc55c-39dd-4b2d-b0b4-dd03e5652b07/85c0363d-2b84-4ab7-9543-8fe3ac5e6d6f"
+					(reference "R41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "device:R")
+		(at 36.83 57.15 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "d5f0e608-0d80-4ca4-8c1c-91bdd7ff4a04")
+		(property "Reference" "R48"
+			(at 36.83 51.9895 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 36.83 54.4138 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "azonenberg_pcb:EIA_0402_RES_NOSILK"
+			(at 36.83 58.928 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 36.83 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b9a71aaf-eb90-41f1-b926-3f41385d51fc")
+		)
+		(pin "1"
+			(uuid "9a15631d-f472-4c0a-a73b-66e0ab5b7aa3")
+		)
+		(instances
+			(project "reworkctf-v2"
+				(path "/2cafc55c-39dd-4b2d-b0b4-dd03e5652b07/85c0363d-2b84-4ab7-9543-8fe3ac5e6d6f"
+					(reference "R48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "device:R")
+		(at 48.26 30.48 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "e1b3fea5-e7a3-4fa4-a80a-66da7cd664fe")
+		(property "Reference" "R50"
+			(at 48.26 25.3195 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 48.26 27.7438 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "azonenberg_pcb:EIA_0402_RES_NOSILK"
+			(at 48.26 32.258 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 48.26 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0fcc2458-d9d6-4e48-827d-4b24895d9583")
+		)
+		(pin "1"
+			(uuid "b535acf2-8cf9-41c0-ab6e-a1aff561aac1")
+		)
+		(instances
+			(project "reworkctf-v2"
+				(path "/2cafc55c-39dd-4b2d-b0b4-dd03e5652b07/85c0363d-2b84-4ab7-9543-8fe3ac5e6d6f"
+					(reference "R50")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "device:R")
+		(at 36.83 48.26 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "e3c5ed9d-5076-4627-af26-99bab1d07f19")
+		(property "Reference" "R47"
+			(at 36.83 43.0995 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 36.83 45.5238 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "azonenberg_pcb:EIA_0402_RES_NOSILK"
+			(at 36.83 50.038 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 36.83 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5606359a-2b9a-4548-a124-4d01f00d82ee")
+		)
+		(pin "1"
+			(uuid "d830de25-663e-459a-9f23-cdbe26dc7137")
+		)
+		(instances
+			(project "reworkctf-v2"
+				(path "/2cafc55c-39dd-4b2d-b0b4-dd03e5652b07/85c0363d-2b84-4ab7-9543-8fe3ac5e6d6f"
+					(reference "R47")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "device:R")
+		(at 24.13 57.15 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "ed54951e-3d5c-4f15-b01d-39d9bbd4d2f5")
+		(property "Reference" "R43"
+			(at 24.13 51.9895 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 24.13 54.4138 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "azonenberg_pcb:EIA_0402_RES_NOSILK"
+			(at 24.13 58.928 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 24.13 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 24.13 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8f88f3e2-b125-45ef-8852-f2475377ad7b")
+		)
+		(pin "1"
+			(uuid "65e5d817-6e17-465c-97ac-fa156038fc95")
+		)
+		(instances
+			(project "reworkctf-v2"
+				(path "/2cafc55c-39dd-4b2d-b0b4-dd03e5652b07/85c0363d-2b84-4ab7-9543-8fe3ac5e6d6f"
+					(reference "R43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "device:R")
+		(at 24.13 48.26 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "ef2971ec-d7a6-4c21-ac64-9c9ea861bc8e")
+		(property "Reference" "R42"
+			(at 24.13 43.0995 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 24.13 45.5238 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "azonenberg_pcb:EIA_0402_RES_NOSILK"
+			(at 24.13 50.038 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 24.13 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 24.13 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ee14cbaf-9f88-4963-9bff-11050760aac5")
+		)
+		(pin "1"
+			(uuid "9001624c-91ef-43bf-9809-90c5af044699")
+		)
+		(instances
+			(project "reworkctf-v2"
+				(path "/2cafc55c-39dd-4b2d-b0b4-dd03e5652b07/85c0363d-2b84-4ab7-9543-8fe3ac5e6d6f"
+					(reference "R42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "device:R")
+		(at 48.26 48.26 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "f7e16b0d-0d32-4785-b5f9-2395266c90a2")
+		(property "Reference" "R52"
+			(at 48.26 43.0995 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 48.26 45.5238 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "azonenberg_pcb:EIA_0402_RES_NOSILK"
+			(at 48.26 50.038 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 48.26 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d86c7645-48e2-4e29-bd65-e1ba3b26fbba")
+		)
+		(pin "1"
+			(uuid "836d4908-e55f-444e-85b7-1214741631a6")
+		)
+		(instances
+			(project "reworkctf-v2"
+				(path "/2cafc55c-39dd-4b2d-b0b4-dd03e5652b07/85c0363d-2b84-4ab7-9543-8fe3ac5e6d6f"
+					(reference "R52")
+					(unit 1)
+				)
+			)
+		)
+	)
+)

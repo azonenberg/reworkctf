@@ -42,3 +42,7 @@ Surface trace cuts and rerouting require a scalpel or rotary tool/mill with very
 ## What are the challenges?
 
 See [the list here](/CHALLENGES.md). Each challenge is marked with silkscreened text on the PCB to make it easy to find.
+
+## What is the "Free Play Area"?
+
+A big pile of component footprints and traces not connected to anything else. Invent your own challenges or use it to practice for the official ones.
