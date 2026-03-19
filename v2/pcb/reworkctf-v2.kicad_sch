@@ -8145,6 +8145,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Challenge 16"
+		(exclude_from_sim no)
+		(at 96.52 195.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2d399bbe-d59b-43b2-a757-b000be729592")
+	)
 	(text "GPIO expansion\nfor use as devkit\nafter challenge\nis complete"
 		(exclude_from_sim no)
 		(at 39.37 162.56 0)
@@ -8555,6 +8565,10 @@
 		(uuid "ac1afbae-9009-4f99-bd41-f496fce76749")
 	)
 	(no_connect
+		(at 109.22 189.23)
+		(uuid "acf3fdda-ea4f-45fb-b728-bb466446d3ba")
+	)
+	(no_connect
 		(at 109.22 210.82)
 		(uuid "ad2f413c-fab1-4498-b9c9-e6b01c47300b")
 	)
@@ -8611,10 +8625,6 @@
 		(uuid "cbc17cc4-54da-49fe-aaa5-e1909b20f215")
 	)
 	(no_connect
-		(at 109.22 196.85)
-		(uuid "ccebab79-ea4a-4902-9f77-fa610bca62bf")
-	)
-	(no_connect
 		(at 166.37 210.82)
 		(uuid "ce16e867-2d36-47cb-b0b3-714a005a8c51")
 	)
@@ -8657,10 +8667,6 @@
 	(no_connect
 		(at 166.37 129.54)
 		(uuid "e4938c67-095a-4115-8263-d2123b345d87")
-	)
-	(no_connect
-		(at 109.22 189.23)
-		(uuid "edc4b2c6-4f88-4494-8493-9d2524f4e1b1")
 	)
 	(no_connect
 		(at 166.37 38.1)
@@ -10305,6 +10311,16 @@
 			(justify right bottom)
 		)
 		(uuid "aa21cf55-b8a4-4e77-b76b-4d65861f9fd0")
+	)
+	(label "GND"
+		(at 109.22 196.85 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "acf5ca16-37d2-4591-be6a-209af56053c8")
 	)
 	(label "MCU_LED15"
 		(at 279.4 179.07 180)

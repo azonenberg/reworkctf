@@ -44,6 +44,8 @@ Somehow we forgot a via between the top and bottom layer. Restore the connection
 
 A zone fill got screwed up and a via from front to back is shorted to the power plane. Clear the short but preserve the intended connection.
 
+(You must do an inner layer circuit edit for this problem, bypassing the via or isolating the zone fill is not allowed.)
+
 ### Challenge 15 (100 points)
 
 Somebody forgot a pullup on an open-drain signal. Add a 10K resistor from the trace to the 3V3 rail.
@@ -90,8 +92,6 @@ Our BGA breakout generator script had a bug and one of the BGA breakout vias is 
 
 This is the same exact defect as challenge 13, except somehow it went unnoticed until the board was populated. Have fun.
 
-TODO
-* Connect a missing trace to a BGA pad (before populating)
-* Add a missing via + dogbone under a BGA (before populating)
-* Add a missing via + dogbone under a BGA (after populating)
+### Challenge 16 (500 points)
 
+Pin R16 of the MCU should have been strapped to 3V3 but was instead connected to ground. Reconnect the via to the correct plane.
