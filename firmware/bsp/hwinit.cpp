@@ -56,12 +56,27 @@ UART<32, 256> g_cliUART(&USART1, 1031);
 /**
 	@brief MCU GPIO LEDs
  */
-GPIOPin g_leds[4] =
+GPIOPin g_leds[16] =
 {
-	GPIOPin(&GPIOH, 13, GPIOPin::MODE_OUTPUT, GPIOPin::SLEW_SLOW),
-	GPIOPin(&GPIOA, 11, GPIOPin::MODE_OUTPUT, GPIOPin::SLEW_SLOW),
-	GPIOPin(&GPIOA, 12, GPIOPin::MODE_OUTPUT, GPIOPin::SLEW_SLOW),
-	GPIOPin(&GPIOG, 2, GPIOPin::MODE_OUTPUT, GPIOPin::SLEW_SLOW)
+	GPIOPin(&GPIOH, 13, GPIOPin::MODE_OUTPUT, GPIOPin::SLEW_SLOW),	//0
+	GPIOPin(&GPIOA, 11, GPIOPin::MODE_OUTPUT, GPIOPin::SLEW_SLOW),	//1
+	GPIOPin(&GPIOA, 12, GPIOPin::MODE_OUTPUT, GPIOPin::SLEW_SLOW),	//2
+	GPIOPin(&GPIOG, 2, GPIOPin::MODE_OUTPUT, GPIOPin::SLEW_SLOW),	//3
+
+	GPIOPin(&GPIOK, 2, GPIOPin::MODE_OUTPUT, GPIOPin::SLEW_SLOW),	//4
+	GPIOPin(&GPIOA, 8, GPIOPin::MODE_OUTPUT, GPIOPin::SLEW_SLOW),	//5
+	GPIOPin(&GPIOC, 9, GPIOPin::MODE_OUTPUT, GPIOPin::SLEW_SLOW),	//6
+	GPIOPin(&GPIOG, 8, GPIOPin::MODE_OUTPUT, GPIOPin::SLEW_SLOW),	//7
+
+	GPIOPin(&GPIOC, 6, GPIOPin::MODE_OUTPUT, GPIOPin::SLEW_SLOW),	//8
+	GPIOPin(&GPIOG, 6, GPIOPin::MODE_OUTPUT, GPIOPin::SLEW_SLOW),	//9
+	GPIOPin(&GPIOG, 5, GPIOPin::MODE_OUTPUT, GPIOPin::SLEW_SLOW),	//10
+	GPIOPin(&GPIOG, 4, GPIOPin::MODE_OUTPUT, GPIOPin::SLEW_SLOW),	//11
+
+	GPIOPin(&GPIOK, 1, GPIOPin::MODE_OUTPUT, GPIOPin::SLEW_SLOW),	//12
+	GPIOPin(&GPIOG, 3, GPIOPin::MODE_OUTPUT, GPIOPin::SLEW_SLOW),	//13
+	GPIOPin(&GPIOK, 0, GPIOPin::MODE_OUTPUT, GPIOPin::SLEW_SLOW),	//14
+	GPIOPin(&GPIOJ, 11, GPIOPin::MODE_OUTPUT, GPIOPin::SLEW_SLOW)	//15
 };
 
 /**
@@ -87,6 +102,16 @@ void InitQSPI();
 
 void BSP_InitTasks();
 
+void GradeChallenges();
+void GradeChallenge1();
+void GradeChallenge2();
+void GradeChallenge3();
+void GradeChallenge4();
+void GradeChallenge5();
+void GradeChallenge6();
+void GradeChallenge7();
+void GradeChallenge8();
+
 void BSP_Init()
 {
 	//Set up PLL2 to run the external memory bus
@@ -104,10 +129,12 @@ void BSP_Init()
 	);
 
 	//Turn off all of the LEDs
-	for(int i=0; i<4; i++)
-		g_leds[i] = 1;
+	for(int i=0; i<16; i++)
+		g_leds[i] = 0;
 
 	InitRTCFromHSE();
+
+	GradeChallenges();
 
 	/*
 	InitQSPI();
@@ -215,4 +242,152 @@ void InitQSPI()
 
 	g_flashQspi.MemoryMap();
 	*/
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Check each of the challenges
+
+void GradeChallenges()
+{
+	g_log("Grading challenges...\n");
+	LogIndenter li(g_log);
+
+	GradeChallenge1();
+	GradeChallenge2();
+	GradeChallenge3();
+	GradeChallenge4();
+	GradeChallenge5();
+	GradeChallenge6();
+	GradeChallenge7();
+	GradeChallenge8();
+}
+
+void GradeChallenge1()
+{
+	//Challenge 1: short between test signal and ground. Pull weakly high and see how it reads
+	GPIOPin challenge_01(&GPIOA, 3, GPIOPin::MODE_INPUT, GPIOPin::SLEW_SLOW);
+	challenge_01.SetPullMode(GPIOPin::PULL_UP);
+	g_logTimer.Sleep(1);
+	if(challenge_01)
+	{
+		g_log("[ 1]: OK \n");
+		g_leds[0] = 1;
+	}
+	else
+		g_log(Logger::ERROR, "[ 1]: FAIL \n");
+}
+
+void GradeChallenge2()
+{
+	//Challenge 2: Two signals shorted together.
+	//Verify they are not broken, and connect together properly
+	GPIOPin challenge_02_a_1(&GPIOA, 4, GPIOPin::MODE_INPUT, GPIOPin::SLEW_SLOW);
+	GPIOPin challenge_02_a_2(&GPIOB, 0, GPIOPin::MODE_INPUT, GPIOPin::SLEW_SLOW);
+	GPIOPin challenge_02_b_1(&GPIOB, 1, GPIOPin::MODE_INPUT, GPIOPin::SLEW_SLOW);
+	GPIOPin challenge_02_b_2(&GPIOC, 5, GPIOPin::MODE_INPUT, GPIOPin::SLEW_SLOW);
+
+	//Check for breaks: Pull 1 end of each high and float 2 end, make sure 2 end reads high.
+	challenge_02_a_1.SetPullMode(GPIOPin::PULL_UP);
+	challenge_02_b_1.SetPullMode(GPIOPin::PULL_UP);
+	g_logTimer.Sleep(1);
+	if(!challenge_02_a_2 || !challenge_02_b_2)
+	{
+		g_log(Logger::ERROR, "[ 2]: FAIL \n");
+		return;
+	}
+
+	//Repeat with low at the 1 end
+	challenge_02_a_1.SetPullMode(GPIOPin::PULL_DOWN);
+	challenge_02_b_1.SetPullMode(GPIOPin::PULL_DOWN);
+	g_logTimer.Sleep(1);
+	if(challenge_02_a_2 || challenge_02_b_2)
+	{
+		g_log(Logger::ERROR, "[ 2]: FAIL \n");
+		return;
+	}
+
+	//Now that we know both are unbroken, drive A1 strongly high and pull B2 weakly low and check for a short
+	challenge_02_a_1.SetMode(GPIOPin::MODE_OUTPUT);
+	challenge_02_a_1 = 1;
+	challenge_02_b_1.SetPullMode(GPIOPin::PULL_DOWN);
+	if(challenge_02_b_2)
+	{
+		g_log(Logger::ERROR, "[ 2]: FAIL \n");
+		return;
+	}
+
+	//If we get here, all good
+	g_log("[ 2]: OK \n");
+}
+
+void GradeChallenge3()
+{
+	//Challenge 3: LED is backwards
+	g_log("[ 3]: Not software gradeable, look at the LED \n");
+	g_leds[2] = 1;
+}
+
+void GradeChallenge4()
+{
+	//Just check for continuity through the resistor
+	GPIOPin challenge_04(&GPIOJ, 3, GPIOPin::MODE_INPUT, GPIOPin::SLEW_SLOW);
+	challenge_04.SetPullMode(GPIOPin::PULL_DOWN);
+	g_logTimer.Sleep(1);
+
+	if(!challenge_04)
+	{
+		g_log(Logger::ERROR, "[ 4]: FAIL \n");
+		return;
+	}
+
+	//If we get here, all good
+	g_log("[ 4]: OK \n");
+}
+
+void GradeChallenge5()
+{
+	//Just check for continuity through the resistor
+	GPIOPin challenge_05(&GPIOJ, 4, GPIOPin::MODE_INPUT, GPIOPin::SLEW_SLOW);
+	challenge_05.SetPullMode(GPIOPin::PULL_DOWN);
+	g_logTimer.Sleep(1);
+
+	if(!challenge_05)
+	{
+		g_log(Logger::ERROR, "[ 5]: FAIL \n");
+		return;
+	}
+
+	//If we get here, all good
+	g_log("[ 5]: OK \n");
+}
+
+void GradeChallenge6()
+{
+	//no-op, need to do 7
+}
+
+void GradeChallenge7()
+{
+	g_log("[ 6]: FIXME need to implement qspi test \n");
+	g_log("[ 7]: FIXME need to implement qspi test \n");
+}
+
+void GradeChallenge8()
+{
+
+	//Just check for continuity through the break
+	GPIOPin challenge_08_a(&GPIOG, 1, GPIOPin::MODE_OUTPUT, GPIOPin::SLEW_SLOW);
+	GPIOPin challenge_08_b(&GPIOF, 11, GPIOPin::MODE_INPUT, GPIOPin::SLEW_SLOW);
+	challenge_08_a = 1;
+	challenge_08_b.SetPullMode(GPIOPin::PULL_DOWN);
+	g_logTimer.Sleep(1);
+
+	if(!challenge_08_b)
+	{
+		g_log(Logger::ERROR, "[ 8]: FAIL \n");
+		return;
+	}
+
+	//If we get here, all good
+	g_log("[ 8]: OK \n");
 }

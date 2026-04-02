@@ -48,7 +48,7 @@ void App_Init();
 void InitI2C();
 
 //Common hardware interface stuff
-extern GPIOPin g_leds[4];
+extern GPIOPin g_leds[16];
 
 void USART1_Handler();
 
