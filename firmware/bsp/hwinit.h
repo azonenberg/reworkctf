@@ -45,7 +45,6 @@
 #include <boilerplate/h750/StandardBSP.h>
 
 void App_Init();
-void InitI2C();
 
 //Common hardware interface stuff
 extern GPIOPin g_leds[16];

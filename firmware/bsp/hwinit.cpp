@@ -86,7 +86,7 @@ GPIOPin g_leds[16] =
 	QSPI kernel clock defaults to HCLK3 which is 237.5 MHz
 	Divide by 4 gives 59.375 MHz which should be fairly safe to start
  */
-//QuadSPI_SpiFlashInterface g_flashQspi(&_QUADSPI, 128 * 1024 * 1024, 4);
+QuadSPI_SpiFlashInterface g_flashQspi(&_QUADSPI, 128 * 1024 * 1024, 4);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Task tables
@@ -98,7 +98,7 @@ etl::vector<TimerTask*, MAX_TIMER_TASKS>  g_timerTasks;
 // Do other initialization
 
 void InitITM();
-void InitQSPI();
+bool InitQSPI();
 
 void BSP_InitTasks();
 
@@ -145,7 +145,6 @@ void BSP_Init()
 	GradeChallenges();
 
 	/*
-	InitQSPI();
 	DoInitKVS();
 	//InitITM();
 	*/
@@ -208,13 +207,11 @@ void BSP_InitUART()
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Higher level initialization we used for a lot of stuff
 
-void InitQSPI()
+bool InitQSPI()
 {
-	/*
 	g_log("Initializing QSPI...\n");
 
 	//Set up QSPI pins
-	g_leds[1] = 1;
 	static GPIOPin quadspi_sck(&GPIOB, 2, GPIOPin::MODE_PERIPHERAL, GPIOPin::SLEW_FAST, 9);
 	static GPIOPin quadspi_cs_n(&GPIOB, 6, GPIOPin::MODE_PERIPHERAL, GPIOPin::SLEW_FAST, 10);
 	static GPIOPin quadspi_dq0(&GPIOF, 8, GPIOPin::MODE_PERIPHERAL, GPIOPin::SLEW_FAST, 10);
@@ -222,8 +219,7 @@ void InitQSPI()
 	static GPIOPin quadspi_dq2(&GPIOF, 7, GPIOPin::MODE_PERIPHERAL, GPIOPin::SLEW_FAST, 9);
 	static GPIOPin quadspi_dq3(&GPIOF, 6, GPIOPin::MODE_PERIPHERAL, GPIOPin::SLEW_FAST, 9);
 
-	//Bring the QSPI up in memory mapped mode
-	g_leds[2] = 1;
+	//Bring the QSPI up
 	g_flashQspi.SetDoubleRateMode(false);
 	g_flashQspi.SetInstructionMode(QuadSPI::MODE_SINGLE);
 	g_flashQspi.SetAddressMode(QuadSPI::MODE_SINGLE, 3);
@@ -233,10 +229,9 @@ void InitQSPI()
 	g_flashQspi.SetDeselectTime(1);
 	g_flashQspi.SetFifoThreshold(1);
 	g_flashQspi.Enable();
-	g_leds[3] = 1;
 
 	//break point in case of issues
-	g_logTimer.Sleep(5000);
+	//g_logTimer.Sleep(1000);
 
 	g_flashQspi.Discover();
 
@@ -244,12 +239,12 @@ void InitQSPI()
 	if(g_flashQspi.GetFlashSize() < 4096 )
 	{
 		g_log(Logger::ERROR, "Failed to detect SPI flash\n");
-		while(1)
-		{}
+		return false;
 	}
 
+	//if we get here the flash is good
 	g_flashQspi.MemoryMap();
-	*/
+	return true;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -387,10 +382,18 @@ void GradeChallenge6()
 
 void GradeChallenge7()
 {
-	g_log("[ 6]: FIXME need to implement qspi test \n");
-	g_log("[ 7]: FIXME need to implement qspi test \n");
-	//g_leds[5] = 1;
-	//g_leds[6] = 1;
+	if(InitQSPI())
+	{
+		g_log("[ 6]: OK \n");
+		g_log("[ 7]: OK \n");
+		g_leds[5] = 1;
+		g_leds[6] = 1;
+	}
+	else
+	{
+		g_log(Logger::ERROR, "[ 6]: FAIL \n");
+		g_log(Logger::ERROR, "[ 7]: FAIL \n");
+	}
 }
 
 void GradeChallenge8()
