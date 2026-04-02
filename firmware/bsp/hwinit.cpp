@@ -111,6 +111,14 @@ void GradeChallenge5();
 void GradeChallenge6();
 void GradeChallenge7();
 void GradeChallenge8();
+void GradeChallenge9();
+void GradeChallenge10();
+void GradeChallenge11();
+void GradeChallenge12();
+void GradeChallenge13();
+void GradeChallenge14();
+void GradeChallenge15();
+void GradeChallenge16();
 
 void BSP_Init()
 {
@@ -260,6 +268,14 @@ void GradeChallenges()
 	GradeChallenge6();
 	GradeChallenge7();
 	GradeChallenge8();
+	GradeChallenge9();
+	GradeChallenge10();
+	GradeChallenge11();
+	GradeChallenge12();
+	GradeChallenge13();
+	GradeChallenge14();
+	GradeChallenge15();
+	GradeChallenge16();
 }
 
 void GradeChallenge1()
@@ -318,6 +334,7 @@ void GradeChallenge2()
 
 	//If we get here, all good
 	g_log("[ 2]: OK \n");
+	g_leds[1] = 1;
 }
 
 void GradeChallenge3()
@@ -342,6 +359,7 @@ void GradeChallenge4()
 
 	//If we get here, all good
 	g_log("[ 4]: OK \n");
+	g_leds[3] = 1;
 }
 
 void GradeChallenge5()
@@ -359,6 +377,7 @@ void GradeChallenge5()
 
 	//If we get here, all good
 	g_log("[ 5]: OK \n");
+	g_leds[4] = 1;
 }
 
 void GradeChallenge6()
@@ -370,11 +389,12 @@ void GradeChallenge7()
 {
 	g_log("[ 6]: FIXME need to implement qspi test \n");
 	g_log("[ 7]: FIXME need to implement qspi test \n");
+	//g_leds[5] = 1;
+	//g_leds[6] = 1;
 }
 
 void GradeChallenge8()
 {
-
 	//Just check for continuity through the break
 	GPIOPin challenge_08_a(&GPIOG, 1, GPIOPin::MODE_OUTPUT, GPIOPin::SLEW_SLOW);
 	GPIOPin challenge_08_b(&GPIOF, 11, GPIOPin::MODE_INPUT, GPIOPin::SLEW_SLOW);
@@ -390,4 +410,193 @@ void GradeChallenge8()
 
 	//If we get here, all good
 	g_log("[ 8]: OK \n");
+	g_leds[7] = 1;
+}
+
+void GradeChallenge9()
+{
+	//Challenge 9: Inner layer diffpair swap
+	//Verify they are not broken, and connect together properly
+	GPIOPin challenge_09_p_1(&GPIOE, 14, GPIOPin::MODE_INPUT, GPIOPin::SLEW_SLOW);
+	GPIOPin challenge_09_p_2(&GPIOE, 9, GPIOPin::MODE_INPUT, GPIOPin::SLEW_SLOW);
+	GPIOPin challenge_09_n_1(&GPIOE, 7, GPIOPin::MODE_INPUT, GPIOPin::SLEW_SLOW);
+	GPIOPin challenge_09_n_2(&GPIOF, 14, GPIOPin::MODE_INPUT, GPIOPin::SLEW_SLOW);
+
+	//Check for breaks: Pull 1 end of each high and float 2 end, make sure 2 end reads high.
+	challenge_09_p_1.SetPullMode(GPIOPin::PULL_UP);
+	challenge_09_n_1.SetPullMode(GPIOPin::PULL_UP);
+	g_logTimer.Sleep(1);
+	if(!challenge_09_p_2 || !challenge_09_n_2)
+	{
+		g_log(Logger::ERROR, "[ 9]: FAIL \n");
+		return;
+	}
+
+	//Repeat with low at the 1 end
+	challenge_09_p_1.SetPullMode(GPIOPin::PULL_DOWN);
+	challenge_09_n_1.SetPullMode(GPIOPin::PULL_DOWN);
+	g_logTimer.Sleep(1);
+	if(challenge_09_p_2 || challenge_09_n_2)
+	{
+		g_log(Logger::ERROR, "[ 9]: FAIL \n");
+		return;
+	}
+
+	//Now that we know both are unbroken, drive A1 strongly high and pull B2 weakly low and check for a short
+	challenge_09_p_1.SetMode(GPIOPin::MODE_OUTPUT);
+	challenge_09_p_1 = 1;
+	challenge_09_n_1.SetPullMode(GPIOPin::PULL_DOWN);
+	if(challenge_09_n_2)
+	{
+		g_log(Logger::ERROR, "[ 9]: FAIL \n");
+		return;
+	}
+
+	//If we get here, all good
+	g_log("[ 9]: OK \n");
+	g_leds[8] = 1;
+}
+
+void GradeChallenge10()
+{
+	//Just check for continuity through the break
+	GPIOPin challenge_10_a(&GPIOF, 15, GPIOPin::MODE_OUTPUT, GPIOPin::SLEW_SLOW);
+	GPIOPin challenge_10_b(&GPIOE, 12, GPIOPin::MODE_INPUT, GPIOPin::SLEW_SLOW);
+	challenge_10_a = 1;
+	challenge_10_b.SetPullMode(GPIOPin::PULL_DOWN);
+	g_logTimer.Sleep(1);
+
+	if(!challenge_10_b)
+	{
+		g_log(Logger::ERROR, "[10]: FAIL \n");
+		return;
+	}
+
+	//If we get here, all good
+	g_log("[10]: OK \n");
+	g_leds[9] = 1;
+}
+
+void GradeChallenge11()
+{
+	//Challenge 11: via top to bottom shorted to inner layer Vdd fill.
+	//First, check for shorts from each to Vdd
+	GPIOPin challenge_11_a(&GPIOH, 7, GPIOPin::MODE_INPUT, GPIOPin::SLEW_SLOW);
+	GPIOPin challenge_11_b(&GPIOH, 8, GPIOPin::MODE_INPUT, GPIOPin::SLEW_SLOW);
+	challenge_11_a.SetPullMode(GPIOPin::PULL_DOWN);
+	challenge_11_b.SetPullMode(GPIOPin::PULL_DOWN);
+	g_logTimer.Sleep(1);
+	if(challenge_11_a || challenge_11_b)
+	{
+		g_log(Logger::ERROR, "[11]: FAIL \n");
+		return;
+	}
+
+	//Then check for continuity
+	challenge_11_a.SetMode(GPIOPin::MODE_OUTPUT);
+	challenge_11_a = 1;
+	if(!challenge_11_b)
+	{
+		g_log(Logger::ERROR, "[11]: FAIL \n");
+		return;
+	}
+
+	//If we get here, all good
+	g_log("[11]: OK \n");
+	g_leds[10] = 1;
+}
+
+void GradeChallenge12()
+{
+	//Challenge 12: bad reflow on BGA balls. Verify continuity
+	GPIOPin challenge_12_a(&GPIOI, 5, GPIOPin::MODE_OUTPUT, GPIOPin::SLEW_SLOW);
+	GPIOPin challenge_12_b(&GPIOI, 6, GPIOPin::MODE_INPUT, GPIOPin::SLEW_SLOW);
+	challenge_12_a = 1;
+	challenge_12_b.SetPullMode(GPIOPin::PULL_DOWN);
+	g_logTimer.Sleep(1);
+
+	if(!challenge_12_b)
+	{
+		g_log(Logger::ERROR, "[12]: FAIL \n");
+		return;
+	}
+
+	//If we get here, all good
+	g_log("[12]: OK \n");
+	g_leds[11] = 1;
+}
+
+void GradeChallenge13()
+{
+	//Challenge 13: Missing dogbone trace. Verify continuity
+	GPIOPin challenge_13_a(&GPIOB, 12, GPIOPin::MODE_OUTPUT, GPIOPin::SLEW_SLOW);
+	GPIOPin challenge_13_b(&GPIOB, 13, GPIOPin::MODE_INPUT, GPIOPin::SLEW_SLOW);
+	challenge_13_a = 1;
+	challenge_13_b.SetPullMode(GPIOPin::PULL_DOWN);
+	g_logTimer.Sleep(1);
+
+	if(!challenge_13_b)
+	{
+		g_log(Logger::ERROR, "[13]: FAIL \n");
+		return;
+	}
+
+	//If we get here, all good
+	g_log("[13]: OK \n");
+	g_leds[12] = 1;
+}
+
+void GradeChallenge14()
+{
+	//Challenge 14: Missing dogbone trace. Verify continuity
+	GPIOPin challenge_14_a(&GPIOB, 10, GPIOPin::MODE_OUTPUT, GPIOPin::SLEW_SLOW);
+	GPIOPin challenge_14_b(&GPIOH, 9, GPIOPin::MODE_INPUT, GPIOPin::SLEW_SLOW);
+	challenge_14_a = 1;
+	challenge_14_b.SetPullMode(GPIOPin::PULL_DOWN);
+	g_logTimer.Sleep(1);
+
+	if(!challenge_14_b)
+	{
+		g_log(Logger::ERROR, "[14]: FAIL \n");
+		return;
+	}
+
+	//If we get here, all good
+	g_log("[14]: OK \n");
+	g_leds[13] = 1;
+}
+
+void GradeChallenge15()
+{
+	//Challenge 15: Missing pullup
+	//Just check for continuity through the resistor
+	GPIOPin challenge_15(&GPIOC, 13, GPIOPin::MODE_INPUT, GPIOPin::SLEW_SLOW);
+	challenge_15.SetPullMode(GPIOPin::PULL_DOWN);
+	g_logTimer.Sleep(1);
+
+	if(!challenge_15)
+	{
+		g_log(Logger::ERROR, "[15]: FAIL \n");
+		return;
+	}
+
+	//If we get here, all good
+	g_log("[15]: OK \n");
+	g_leds[14] = 1;
+}
+
+void GradeChallenge16()
+{
+	//Challenge 16: Pin strapped to ground rather than VDD
+	GPIOPin challenge_16(&GPIOD, 12, GPIOPin::MODE_INPUT, GPIOPin::SLEW_SLOW);
+
+	if(!challenge_16)
+	{
+		g_log(Logger::ERROR, "[16]: FAIL \n");
+		return;
+	}
+
+	//If we get here, all good
+	g_log("[16]: OK \n");
+	g_leds[15] = 1;
 }
