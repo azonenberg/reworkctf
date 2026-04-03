@@ -26,7 +26,7 @@ set(CEP_BUILD_SERVICES 0)
 set(CEP_BUILD_TCPIP 0)
 set(CEP_BOILERPLATE_TARGET H750)
 add_compile_definitions(MAX_TOKEN_LEN=96)
-add_compile_definitions(LOGGER_USE_RTC_TIMESTAMP)
+#add_compile_definitions(LOGGER_USE_RTC_TIMESTAMP)
 add_compile_definitions(NO_SOFTWARE_25519)
 
 # Include paths
